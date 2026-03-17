@@ -12,6 +12,7 @@ import siteData from './content/site.json';
 import spacesData from './content/spaces.json';
 import testimonialsData from './content/testimonials.json';
 import treatmentsData from './content/treatments.json';
+import { resolveAssetPath } from './lib/assetPath';
 import type {
   CaseStudy,
   FaqItem,
@@ -38,10 +39,12 @@ function buildWhatsappLink(number: string, message: string) {
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('Todas');
   const [productSearch, setProductSearch] = useState('');
+  const [selectedTreatmentId, setSelectedTreatmentId] = useState<string | null>(null);
   const [selectedProductId, setSelectedProductId] = useState<string | null>(null);
   const deferredSearch = useDeferredValue(productSearch);
 
   const categories = ['Todas', ...new Set(products.map((item) => item.category))];
+  const selectedTreatment = treatments.find((item) => item.id === selectedTreatmentId) ?? null;
   const selectedProduct = products.find((item) => item.id === selectedProductId) ?? null;
   const whatsappUrl = buildWhatsappLink(
     site.contact.whatsappNumber,
@@ -71,7 +74,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (!selectedProduct) {
+    if (!selectedProduct && !selectedTreatment) {
       document.body.style.overflow = '';
       return;
     }
@@ -81,6 +84,7 @@ function App() {
     const handleEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         setSelectedProductId(null);
+        setSelectedTreatmentId(null);
       }
     };
 
@@ -90,7 +94,7 @@ function App() {
       document.body.style.overflow = '';
       window.removeEventListener('keydown', handleEscape);
     };
-  }, [selectedProduct]);
+  }, [selectedProduct, selectedTreatment]);
 
   return (
     <>
@@ -99,7 +103,7 @@ function App() {
           <div className="brand-lockup">
             <img
               className="brand-logo"
-              src={site.brand.logoImage}
+              src={resolveAssetPath(site.brand.logoImage)}
               alt={`Logo de ${site.brand.name}`}
             />
             <div>
@@ -171,7 +175,10 @@ function App() {
             <div className="about-panel">
               <div className="about-intro">
                 <figure className="portrait-card">
-                  <img src={site.brand.profileImage} alt={site.brand.profileAlt} />
+                  <img
+                    src={resolveAssetPath(site.brand.profileImage)}
+                    alt={site.brand.profileAlt}
+                  />
                   <figcaption>
                     <strong>{site.brand.name}</strong>
                     <span>{site.brand.specialty}</span>
@@ -214,7 +221,11 @@ function App() {
               {spaces.map((space) => (
                 <article key={space.id} className="space-card">
                   {space.image ? (
-                    <img className="space-image" src={space.image} alt={space.title} />
+                    <img
+                      className="space-image"
+                      src={resolveAssetPath(space.image)}
+                      alt={space.title}
+                    />
                   ) : (
                     <div className="space-visual" aria-hidden="true">
                       <span>{space.eyebrow}</span>
@@ -240,26 +251,26 @@ function App() {
             <div className="treatment-grid">
               {treatments.map((treatment) => (
                 <article key={treatment.id} className="treatment-card">
-                  <span className="chip">{treatment.badge}</span>
+                  <span className="chip muted">Tratamiento disponible</span>
                   <h3>{treatment.title}</h3>
                   <p>{treatment.summary}</p>
-                  <dl>
-                    <div>
-                      <dt>Duracion</dt>
-                      <dd>{treatment.duration}</dd>
-                    </div>
-                    <div>
-                      <dt>Frecuencia</dt>
-                      <dd>{treatment.frequency}</dd>
-                    </div>
-                    <div>
-                      <dt>Recuperacion</dt>
-                      <dd>{treatment.recovery}</dd>
-                    </div>
-                  </dl>
-                  <a className="inline-link" href={whatsappUrl} target="_blank" rel="noreferrer">
-                    Consultar este tratamiento
-                  </a>
+                  <div className="treatment-actions">
+                    <button
+                      type="button"
+                      className="button button-secondary"
+                      onClick={() => setSelectedTreatmentId(treatment.id)}
+                    >
+                      Ver detalle
+                    </button>
+                    <a
+                      className="button button-primary"
+                      href={buildWhatsappLink(site.contact.whatsappNumber, treatment.ctaWhatsapp)}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Consultar
+                    </a>
+                  </div>
                 </article>
               ))}
             </div>
@@ -306,7 +317,7 @@ function App() {
                     onClick={() => setSelectedProductId(product.id)}
                     aria-label={`Ver detalle de ${product.name}`}
                   >
-                    <img src={product.image} alt={product.name} />
+                    <img src={resolveAssetPath(product.image)} alt={product.name} />
                   </button>
                   <div className="product-copy">
                     <span className="chip muted">{product.category}</span>
@@ -448,6 +459,52 @@ function App() {
         Contactar por WhatsApp
       </a>
 
+      {selectedTreatment ? (
+        <div
+          className="modal-backdrop"
+          role="presentation"
+          onClick={() => setSelectedTreatmentId(null)}
+        >
+          <aside
+            className="product-modal treatment-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="treatment-modal-title"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              className="modal-close"
+              onClick={() => setSelectedTreatmentId(null)}
+              aria-label="Cerrar detalle del tratamiento"
+            >
+              Cerrar
+            </button>
+            <span className="chip muted">Tratamiento disponible</span>
+            <h3 id="treatment-modal-title">{selectedTreatment.title}</h3>
+            <p className="treatment-modal-summary">{selectedTreatment.summary}</p>
+            <p className="treatment-modal-copy">{selectedTreatment.details}</p>
+            <div className="modal-actions">
+              <a
+                className="button button-primary"
+                href={buildWhatsappLink(site.contact.whatsappNumber, selectedTreatment.ctaWhatsapp)}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Consultar este tratamiento
+              </a>
+              <button
+                type="button"
+                className="button button-secondary"
+                onClick={() => setSelectedTreatmentId(null)}
+              >
+                Seguir recorriendo
+              </button>
+            </div>
+          </aside>
+        </div>
+      ) : null}
+
       {selectedProduct ? (
         <div
           className="modal-backdrop"
@@ -469,7 +526,10 @@ function App() {
             >
               Cerrar
             </button>
-            <img src={selectedProduct.image} alt={selectedProduct.name} />
+            <img
+              src={resolveAssetPath(selectedProduct.image)}
+              alt={selectedProduct.name}
+            />
             <span className="chip muted">{selectedProduct.category}</span>
             <h3 id="product-modal-title">{selectedProduct.name}</h3>
             <p>{selectedProduct.descriptionLong}</p>

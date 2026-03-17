@@ -1,39 +1,198 @@
 [
   {
-    "id": "armonizacion",
-    "title": "Armonizacion facial sutil",
-    "summary": "Evaluamos proporciones, expresion y calidad de piel para definir un plan progresivo y natural.",
-    "duration": "45 a 60 min",
-    "frequency": "Segun evaluacion medica",
-    "recovery": "Variable segun procedimiento",
-    "badge": "Consulta guiada"
+    "id": "toxina-botulinica",
+    "title": "Toxina botulínica",
+    "summary": "Relajación facial para una expresión más armónica",
+    "details": "Relajación facial para una expresión más armónica\n\n¿Qué es?\n\nEs una neurotoxina purificada que relaja temporalmente los músculos faciales responsables de las arrugas dinámicas (las que se forman con los gestos).\n\nBeneficios estéticos\n\n\t•\tPreviene y suaviza arrugas de expresión (frente, entrecejo, patas de gallo).\n\t•\tMejora la simetría facial, relajando músculos que generan tensión.\n\t•\tRejuvenece la mirada, al elevar la cola de la ceja y abrir la expresión ocular.\n\t•\tDefine el rostro, relajando el músculo masetero (bruxismo o mandíbula ancha).\n\t•\tAfina el cuello y mejora la apariencia de bandas platismales.\n\t•\tPreviene el envejecimiento, al inhibir los movimientos que marcan líneas profundas.\n\nResultados\n\n\t•\tComienzan a notarse entre los 3 y 7 días posteriores.\n\t•\tDuración promedio: 3 a 4 meses.\n\t•\tSe puede realizar 2 a 3 veces al año\n\nIdeal para quienes buscan suavizar el rostro sin perder naturalidad.",
+    "ctaWhatsapp": "Hola, quiero consultar por Toxina botulínica."
   },
   {
-    "id": "skinboosters",
-    "title": "Skinboosters e hidratacion profunda",
-    "summary": "Protocolos orientados a luminosidad, elasticidad y calidad general de la piel.",
-    "duration": "30 a 45 min",
-    "frequency": "Ciclos de varias sesiones",
-    "recovery": "Minima a moderada",
-    "badge": "Glow saludable"
+    "id": "relleno-con-acido-hialuronico",
+    "title": "Ácido Hialurónico",
+    "summary": "Hidratación, volumen y armonización facial",
+    "details": "Hidratación, volumen y armonización facial\n\n¿Qué es?\n\nEs una sustancia presente naturalmente en la piel, que atrae y retiene agua. En estética se utiliza en forma de gel biocompatible para hidratar, dar volumen y redefinir zonas faciales.\n\nBeneficios estéticos\n\n\t•\tRellena arrugas y surcos (surco nasogeniano, líneas de marioneta).\n\t•\tAporta volumen y proyección (labios, pómulos, mentón, mandíbula).\n\t•\tMejora la hidratación profunda de la piel, logrando un efecto glow.\n\t•\tCorrige asimetrías faciales de manera sutil y natural.\n\t•\tRejuvenece sin cirugía, restaurando el volumen perdido por el paso del tiempo.\n\t•\tMejora ojeras hundidas o con aspecto cansado (tratamiento de valle de lágrimas).\n\t•\tEfecto inmediato y progresivo en las semanas siguientes.\n\nDuración del efecto\n\n\t•\t9 a 18 meses, según la zona tratada, el tipo de ácido y características del paciente.\n\nVentajas\n\n\t•\tReabsorbible y biocompatible\n\t•\tSeguro si se aplica correctamente\n\t•\tProcedimiento ambulatorio y poco invasivo\n\t•\tResultados naturales y personalizados\n\nIdeal para realzar rasgos, rejuvenecer o armonizar el rostro sin perder naturalidad.",
+    "ctaWhatsapp": "Hola, quiero consultar por Ácido Hialurónico."
   },
   {
-    "id": "peelings",
-    "title": "Peelings medicalizados",
-    "summary": "Planes para textura, manchas y renovacion cutanea con acompanamiento posterior.",
-    "duration": "30 min",
-    "frequency": "Planificado por temporada y biotipo",
-    "recovery": "Controlada y explicada en consulta",
-    "badge": "Renovacion"
+    "id": "hifu",
+    "title": "HIFU",
+    "summary": "El HIFU (High-Intensity Focused Ultrasound, o Ultrasonido Focalizado de Alta Intensidad) es una tecnología utilizada para tratamientos de lifting facial y corporal, rejuvenecimiento de la piel y tensado sin cirugía.",
+    "details": "El HIFU (High-Intensity Focused Ultrasound, o Ultrasonido Focalizado de Alta Intensidad) es una tecnología utilizada para tratamientos de lifting facial y corporal, rejuvenecimiento de la piel y tensado sin cirugía. También es muy útil para la reducción de grasa localizada.\n\n¿Cómo funciona el HIFU?\n\n\t•\tEnergía ultrasónica focalizada penetra en capas profundas de la piel (hasta 4,5 mm), alcanzando incluso la fascia muscular superficial (SMAS), la misma capa que se trata en un lifting quirúrgico.\n\t•\tAl provocar puntos de calor controlado, estimula la producción de colágeno y elastina.\n\t•\tEl tejido se reafirma, tensa y eleva progresivamente, sin dañar la superficie de la piel.\n\nBeneficios principales\n\n\t•\tRejuvenecimiento facial sin cirugía\n\t•\tTensado de papada, cuello, frente y pómulos\n\t•\tElevación de cejas y contorno facial\n\t•\tMejora de la flacidez en brazos, abdomen, muslos y glúteos\n\t•\tEstimula colágeno naturalmente\n\t•\tSin tiempo de recuperación (no downtime)\n\t•\tResultados visibles desde el primer mes, que mejoran progresivamente hasta 3-6 meses",
+    "ctaWhatsapp": "Hola, quiero consultar por HIFU."
   },
   {
-    "id": "corporal",
-    "title": "Protocolos corporales complementarios",
-    "summary": "Abordajes no invasivos para mejorar tonicidad, contorno y bienestar integral.",
-    "duration": "40 a 60 min",
-    "frequency": "Semanal o quincenal",
-    "recovery": "Sin reposo habitual",
-    "badge": "Bienestar integral"
+    "id": "exosomas",
+    "title": "Exosomas",
+    "summary": "Regeneración celular avanzada y rejuvenecimiento profundo",
+    "details": "Regeneración celular avanzada y rejuvenecimiento profundo\n\n¿Qué son los exosomas?\n\nSon vesículas extracelulares liberadas por células madre que actúan como mensajeros biológicos. Contienen factores de crecimiento, proteínas, ARN y lípidos que estimulan la regeneración celular, la reparación tisular y la modulación de la inflamación.\n\nBeneficios estéticos\n\n\t•\tEstimulan la producción de colágeno y elastina\nMejora la firmeza, elasticidad y densidad de la piel.\n\t•\tRegeneran y rejuvenecen la piel desde el nivel celular\nPromueven una piel más saludable, luminosa y joven.\n\t•\tMejoran la textura cutánea y minimizan poros\nIdeal para pieles fotoenvejecidas, opacas o con daño estructural.\n\t•\tReducen líneas finas y arrugas\nGracias a su acción antienvejecimiento y reparadora.\n\t•\tCalman la inflamación y mejoran el tono\nIndicados en pieles sensibles, reactivas o con rosácea leve.\n\t•\tPotencian tratamientos estéticos\nSe combinan con microneedling, láser, plasma rico en plaquetas, etc., para acelerar y potenciar resultados.\n\t•\tEstimulan el crecimiento capilar\nReactivan folículos pilosos en cuero cabelludo, mejorando densidad y calidad del cabello.\n\nVentajas\n\n\t•\tTecnología avanzada con respaldo científico\n\t•\tNo invasivo y sin efectos secundarios conocidos\n\t•\tCompatible con otros procedimientos\n\t•\tResultados progresivos y visibles desde las primeras semanas",
+    "ctaWhatsapp": "Hola, quiero consultar por Exosomas."
+  },
+  {
+    "id": "ellanse",
+    "title": "Ellansé",
+    "summary": "Es un bioestimulador dérmico cuya acción principal es estimular la producción de colágeno tipo I y III a largo plazo.",
+    "details": "Es un bioestimulador dérmico cuya acción principal es estimular la producción de colágeno tipo I y III a largo plazo. Su objetivo no es  “rellenar” una arruga o surco, sino mejorar la calidad de la piel desde adentro, logrando un rejuvenecimiento más profundo y duradero (2 años).",
+    "ctaWhatsapp": "Hola, quiero consultar por Ellansé."
+  },
+  {
+    "id": "cellbooster",
+    "title": "Cellbooster",
+    "summary": "Cellbooster de Suisselle es una línea de productos inyectables de mesoterapia avanzada fabricados en Suiza, pensados para revitalizar la piel, corregir imperfecciones específicas y mejorar la calidad cutánea desde el interior.",
+    "details": "Cellbooster de Suisselle es una línea de productos inyectables de mesoterapia avanzada fabricados en Suiza, pensados para revitalizar la piel, corregir imperfecciones específicas y mejorar la calidad cutánea desde el interior. Utiliza una combinación de ácido hialurónico estabilizado + complejos bioactivos (vitaminas, aminoácidos, minerales, antioxidantes, etc.), con formulaciones específicas según la necesidad.\n\n¿Qué diferencia a Cellbooster?\n\n\t•\tTecnología suiza patentada de bioactivación.\n\t•\tÁcido hialurónico reticulado de origen no animal.\n\t•\tIngredientes biocompatibles y seguros.\n\t•\tProducto CE Medical Class III, lo que garantiza estándares europeos de calidad.\n\nLíneas principales de Cellbooster (más comunes):\n\n\t1.\tCellbooster Glow\n\t•\tIndicaciones: piel apagada, manchas, tono desigual, daño solar.\n\t•\tComposición: ácido hialurónico + glutation, vitamina C, aminoácidos.\n\t•\tObjetivo: iluminar, despigmentar, mejorar el tono.\n\n\t2.\tCellbooster Lift\n\t•\tIndicaciones: flacidez, pérdida de elasticidad, arrugas finas.\n\t•\tComposición: ácido hialurónico + aminoácidos esenciales.\n\t•\tObjetivo: tensado biológico, mejora de la firmeza y estructura dérmica.\n\n\t3.\tCellbooster Shape\n\t•\tIndicaciones: adiposidad localizada, papada, flacidez en contorno facial/corporal.\n\t•\tComposición: ácido hialurónico + ácido desoxicólico + minerales.\n\t•\tObjetivo: lipólisis y reafirmación.\n\n\t4.\tCellbooster Hair\n\t•\tIndicaciones: caída de cabello, alopecia, cuero cabelludo desvitalizado.\n\t•\tComposición: ácido hialurónico + biotina, zinc, vitaminas del complejo B.\n\t•\tObjetivo: estimular el crecimiento capilar, fortalecer el folículo.",
+    "ctaWhatsapp": "Hola, quiero consultar por Cellbooster."
+  },
+  {
+    "id": "sunekos-1200",
+    "title": "Sunekos 1200",
+    "summary": "Sunekos 1200 es un tratamiento inyectable de biorrevitalización profunda diseñado para abordar signos avanzados de envejecimiento cutáneo, como pérdida de volumen, flacidez severa y arrugas profundas.",
+    "details": "Sunekos 1200 es un tratamiento inyectable de biorrevitalización profunda diseñado para abordar signos avanzados de envejecimiento cutáneo, como pérdida de volumen, flacidez severa y arrugas profundas. Su fórmula combina ácido hialurónico de alto peso molecular (1200 kDa) con un complejo patentado de seis aminoácidos (HY6AA), que juntos estimulan la regeneración de la matriz extracelular (ECM), promoviendo la producción de colágeno y elastina.\n\n🏼‍️Ideal para las que no se animan al botox.\n\n Composición y mecanismo de acción\n\n\t•\tÁcido hialurónico de alto peso molecular (1200 kDa): proporciona hidratación profunda y efecto voluminizador.\n\t•\tComplejo HY6AA: estimula la regeneración de la ECM, contrarrestando la degradación del ácido hialurónico y promoviendo la producción de colágeno y elastina.\n\nEsta combinación actúa sin añadir volumen excesivo, ofreciendo una reparación estructural natural de la piel.\n\n Indicaciones principales\n\n\t•\tFlacidez severa en rostro y cuello.\n\t•\tPérdida de volumen en mejillas, surcos nasogenianos y línea mandibular.\n\t•\tArrugas profundas y piel envejecida.\n\t•\tFotoenvejecimiento y daño por radiación UVA.\n\t•\tRejuvenecimiento de cuello, escote y manos.\n\n Beneficios observados\n\n\t•\tHidratación profunda y duradera.\n\t•\tMejora de la elasticidad y firmeza de la piel.\n\t•\tReducción de arrugas y líneas de expresión.\n\t•\tRestauración del volumen facial perdido.\n\t•\tEfecto antioxidante que combate el estrés oxidativo.\n\nLos resultados suelen ser visibles desde la primera sesión, con mejoras progresivas en las siguientes semanas.",
+    "ctaWhatsapp": "Hola, quiero consultar por Sunekos 1200."
+  },
+  {
+    "id": "nctf-135-ha",
+    "title": "NCTF 135 HA",
+    "summary": "NCTF 135 HA es un tratamiento de mesoterapia francesa diseñado para revitalizar la piel, mejorar su calidad y combatir los signos del envejecimiento.",
+    "details": "NCTF 135 HA es un tratamiento de mesoterapia francesa diseñado para revitalizar la piel, mejorar su calidad y combatir los signos del envejecimiento. Es ampliamente utilizado en medicina estética por su capacidad para hidratar profundamente, estimular la producción de colágeno y mejorar la textura cutánea.\n\n️Es el elegido para ojeras!\n\n ¿Qué contiene NCTF 135 HA?\n\nEste cóctel polirevitalizante combina:\n\n\t•\tÁcido hialurónico no reticulado (5 mg/ml): proporciona hidratación intensa sin añadir volumen.\n\t•\t59 ingredientes activos, incluyendo:\n\t•\t12 vitaminas: como A, B, C y E, que estimulan las funciones celulares vitales.\n\t•\t24 aminoácidos: favorecen la síntesis de proteínas como el colágeno y la elastina.\n\t•\t6 coenzimas: catalizan reacciones bioquímicas esenciales.\n\t•\t5 bases nucleicas: activan la comunicación celular.\n\t•\t4 minerales: compensan deficiencias cutáneas.\n\t•\t2 antioxidantes: reducen la formación de radicales libres.\n\n ¿Para qué se utiliza?\n\nNCTF 135 HA está indicado para:\n\n\t•\tRejuvenecimiento facial: mejora la luminosidad y textura de la piel.\n\t•\tHidratación profunda: ideal para pieles deshidratadas o apagadas.\n\t•\tReducción de arrugas finas: suaviza líneas de expresión.\n\t•\tMejora de la elasticidad y firmeza: redensifica la piel.\n\t•\tTratamiento de zonas específicas: como cuello, escote, manos y cuero cabelludo.\n\nLa aplicación se realiza mediante microinyecciones superficiales en la dermis, utilizando técnica de mesoterapia.\n\n Beneficios observados\n\n\t•\tMejora inmediata: piel más luminosa y fresca desde la primera sesión.\n\t•\tEfecto acumulativo: mejoras progresivas en hidratación, firmeza y elasticidad.\n\t•\tAlta satisfacción: el 98% de los pacientes reportan resultados positivos.\n\t•\tVersatilidad: puede combinarse con otros tratamientos estéticos como láser, peelings o toxina botulínica.",
+    "ctaWhatsapp": "Hola, quiero consultar por NCTF 135 HA."
+  },
+  {
+    "id": "long-lasting",
+    "title": "Long Lasting",
+    "summary": "Se trata de un biodensificador formulado con:",
+    "details": "Se trata de un biodensificador formulado con:\n\n\t•\tÁcido hialurónico no reticulado (18 mg/ml) de alto peso molecular\n\t•\tAntioxidantes y aminoácidos: como glicina, prolina, hidroxiprolina y vitamina C\n\t•\tTecnología slow release: actúa como un “skin booster” prolongado\n\n¿Qué lo diferencia?\n\nA diferencia de los rellenos, Long Lasting no aporta volumen. Su objetivo es reparar y regenerar la matriz extracelular, generando:\n\n\t•\tRedensificación cutánea\n\t•\tHidratación profunda\n\t•\tEstimulación indirecta de fibroblastos\n\t•\tMejora en la textura, turgencia y elasticidad de la piel\n\nIndicaciones\n\n\t•\tPieles deshidratadas, finas o apagadas\n\t•\tRostros con flacidez incipiente\n\t•\tRejuvenecimiento del cuello, escote y manos\n\t•\tIdeal en pacientes que no quieren rellenos volumétricos",
+    "ctaWhatsapp": "Hola, quiero consultar por Long Lasting."
+  },
+  {
+    "id": "plasma-rico-en-plaquetas",
+    "title": "Plasma rico en plaquetas",
+    "summary": "El Plasma Rico en Plaquetas es un tratamiento que utiliza tu propia sangre para estimular la regeneración celular, mejorar la calidad de la piel y fortalecer el cabello.",
+    "details": "El Plasma Rico en Plaquetas es un tratamiento que utiliza tu propia sangre para estimular la regeneración celular, mejorar la calidad de la piel y fortalecer el cabello. Es un procedimiento seguro, autólogo y mínimamente invasivo.\n\n¿Cómo se realiza?\n\n\t1.\tSe extrae una pequeña cantidad de sangre.\n\t2.\tSe centrifuga para separar el plasma rico en plaquetas.\n\t3.\tEl plasma se aplica en la zona a tratar mediante microinyecciones o microneedling.\n\nBeneficios estéticos\n\n\t•\tEstimula colágeno y elastina.\n\t•\tMejora textura, firmeza y luminosidad.\n\t•\tAtenúa arrugas finas y líneas de expresión.\n\t•\tFavorece la regeneración de cicatrices.\n\t•\tRefuerza y estimula el crecimiento capilar.\n\n¿En qué zonas se puede aplicar?\n\n\t•\tRostro\n\t•\tCuello y escote\n\t•\tContorno de ojos\n\t•\tManos\n\t•\tCuero cabelludo\n\n¿Cuántas sesiones se recomiendan?\n\nGeneralmente se indican 6-12 sesiones espaciadas por 30 días, según el caso.\nVentajas del tratamiento:\n\n\t•\t100% natural y seguro\n\t•\tSin riesgo de alergias\n\t•\tRápida recuperación\n\t•\tResultados progresivos y duraderos.",
+    "ctaWhatsapp": "Hola, quiero consultar por Plasma rico en plaquetas."
+  },
+  {
+    "id": "criolipolisis-plana",
+    "title": "Criolipólisis plana",
+    "summary": "La criolipólisis plana es una técnica de reducción de grasa localizada que utiliza un aplicador plano o sin succión para enfriar de forma controlada las células grasas (adipocitos) hasta provocar su destrucción, sin dañar los tejidos circundantes.",
+    "details": "La criolipólisis plana es una técnica de reducción de grasa localizada que utiliza un aplicador plano o sin succión para enfriar de forma controlada las células grasas (adipocitos) hasta provocar su destrucción, sin dañar los tejidos circundantes. A diferencia de la criolipólisis convencional con vacío, no utiliza succión, lo que la hace ideal para zonas donde no se puede pellizcar fácilmente el tejido adiposo.",
+    "ctaWhatsapp": "Hola, quiero consultar por Criolipólisis plana."
+  },
+  {
+    "id": "mesoterapia",
+    "title": "Mesoterapia",
+    "summary": "Es una técnica médico-estética minimamente invasiva que consiste en la aplicación de microinyecciones superficiales de medicamentos, vitaminas, aminoácidos, minerales o enzimas directamente en la dermis o tejido subcutáneo, con el fin de tratar problemas estéticos y médicos localizados.",
+    "details": "Es una técnica médico-estética minimamente invasiva que consiste en la aplicación de microinyecciones superficiales de medicamentos, vitaminas, aminoácidos, minerales o enzimas directamente en la dermis o tejido subcutáneo, con el fin de tratar problemas estéticos y médicos localizados.\n\n¿Para qué sirve la mesoterapia?\n\nSegún los activos utilizados, puede tratar:\n\nEstética facial:\n\n\t•\tFlacidez y envejecimiento cutáneo\n\t•\tDeshidratación y piel opaca\n\t•\tArrugas finas\n\t•\tManchas\n\t•\tAcné\n\nEstética corporal:\n\n\t•\tCelulitis\n\t•\tAcúmulos grasos localizados (abdomen, flancos, brazos, muslos)\n\t•\tEstrías recientes\n\t•\tRetención de líquidos\n\nCapilar:\n\n\t•\tCaída del cabello (alopecia androgenética o difusa)\n\t•\tEstimulación del crecimiento capilar\n\t•\tFortalecimiento del folículo\n\n¿Qué se inyecta?\n\nLa fórmula varía según el objetivo. Algunos activos comunes:\n\n\t•\tÁcido hialurónico (hidratación y luminosidad)\n\t•\tVitaminas A, C, E y del grupo B\n\t•\tMinerales y oligoelementos\n\t•\tCarnitina, cafeína, fosfatidilcolina (para adiposidad localizada)\n\t•\tDexpantenol, biotina, zinc (para tratamientos capilares)\n\t•\tSilicio orgánico, DMAE (reafirmantes)\n\n¿Cuántas sesiones se necesitan?\n\n\t•\tSe recomienda una serie inicial de 4 a 8 sesiones semanales o quincenales, según la zona.\n\t•\tLuego, sesiones de mantenimiento mensual o anual.",
+    "ctaWhatsapp": "Hola, quiero consultar por Mesoterapia."
+  },
+  {
+    "id": "mio-up",
+    "title": "Mio Up",
+    "summary": "Es un dispositivo de electroestimulación muscular que utiliza pulsos electromagnéticos focalizados para inducir contracciones musculares intensas, superando lo que se logra con el ejercicio convencional.",
+    "details": "Es un dispositivo de electroestimulación muscular que utiliza pulsos electromagnéticos focalizados para inducir contracciones musculares intensas, superando lo que se logra con el ejercicio convencional. Con una potencia de 7 teslas, Mio Up puede generar hasta 30.000 contracciones musculares en 30 minutos, penetrando hasta 8 cm en el tejido para alcanzar la musculatura profunda.\n\n ¿Cómo funciona?\n\nMio Up estimula las motoneuronas que controlan los músculos, provocando contracciones supramáximas. Estas contracciones requieren una alta demanda energética, lo que lleva al cuerpo a utilizar los triglicéridos y ácidos grasos almacenados en los adipocitos cercanos. Como resultado, se produce una reducción de la adiposidad localizada y un aumento de la masa muscular.\n\n Beneficios principales\n\n\t•\tTonificación muscular: Fortalece y define músculos en abdomen, glúteos, muslos, brazos y espalda.\n\t•\tReducción de grasa localizada: Disminuye el tejido adiposo en las zonas tratadas.\n\t•\tMejora de la circulación sanguínea: Favorece el retorno venoso y la oxigenación de los tejidos.\n\t•\tCorrección postural: Al fortalecer la musculatura, contribuye a una mejor postura corporal.\n\t•\tTratamiento no invasivo y sin dolor: No requiere cirugía ni tiempo de recuperación.",
+    "ctaWhatsapp": "Hola, quiero consultar por Mio Up."
+  },
+  {
+    "id": "enygma",
+    "title": "Enygma",
+    "summary": "Tratamiento para el rejuvenecimiento íntimo femenino de manera no invasiva.",
+    "details": "Tratamiento para el rejuvenecimiento íntimo femenino de manera no invasiva. Utiliza la tecnología X-Orbital, que emite energía electromagnética a través de un cabezal 360°, permitiendo una distribución uniforme del calor en los tejidos vulvovaginales sin riesgo de quemaduras.\n\n Indicaciones principales\n\nEnygma está indicado para tratar diversas condiciones relacionadas con la salud íntima femenina, tales como:\n\n\t•\tHiperlaxitud vaginal\n\t•\tIncontinencia urinaria de esfuerzo\n\t•\tDisfunción sexual\n\t•\tSequedad vaginal asociada a la menopausia\n\t•\tIrritación vulvovaginal y dispareunia (dolor durante las relaciones sexuales)\n\t•\tVaginitis atrófica\n\n️ ¿Cómo funciona?\n\nLa tecnología X-Orbital de Enygma genera un calentamiento controlado en los tejidos, estimulando la producción de colágeno y elastina, mejorando la elasticidad y firmeza de la zona tratada. Este proceso también favorece la vasodilatación local y la liberación de factores de crecimiento, contribuyendo a la regeneración de los tejidos y mejorando la función glandular.\n\n Beneficios del tratamiento\n\n\t•\tNo quirúrgico y ambulatorio\n\t•\tIndoloro y sin necesidad de anestesia\n\t•\tSin tiempo de recuperación, permitiendo retomar las actividades diarias inmediatamente\n\t•\tResultados visibles desde la primera sesión, con mejoras progresivas en la función y apariencia de la zona tratada.",
+    "ctaWhatsapp": "Hola, quiero consultar por Enygma."
+  },
+  {
+    "id": "endermologie-lpg",
+    "title": "Endermologie LPG",
+    "summary": "Es una tecnología estética no invasiva desarrollada en Francia por la empresa LPG Systems, que utiliza un sistema de estimulación mecánica mediante rodillos motorizados y succión controlada para tratar la celulitis, reafirmar la piel y modelar el cuerpo.",
+    "details": "Es una tecnología estética no invasiva desarrollada en Francia por la empresa LPG Systems, que utiliza un sistema de estimulación mecánica mediante rodillos motorizados y succión controlada para tratar la celulitis, reafirmar la piel y modelar el cuerpo.\n\n¿Cómo funciona Endermologie LPG?\n\nEl tratamiento se realiza con un dispositivo llamado Cellu M6, que incorpora:\n\n\t•\tRodillos motorizados (Roll’in, Roll’out y Roll’up) que amasan el tejido cutáneo.\n\t•\tAspiración neumática para movilizar la piel y el tejido subcutáneo.\n\nEste masaje mecánico estimula los fibroblastos, favoreciendo la producción natural de colágeno, elastina y ácido hialurónico, mejorando así la calidad de la piel.\n\nBeneficios corporales\n\n\t•\tReducción visible de la celulitis (fibrosa, edematosa o adiposa)\n\t•\tDrenaje linfático y reducción de la retención de líquidos\n\t•\tEstimulación de la lipólisis natural (quema de grasa)\n\t•\tReafirmación y tonificación de la piel\n\t•\tModelado corporal sin cirugía\n\t•\tMejora de la circulación sanguínea y linfática\n\nBeneficios faciales (LPG Endermolift)\n\n\t•\tRejuvenecimiento facial no invasivo\n\t•\tElevación de pómulos y párpados\n\t•\tMejora de líneas finas y arrugas\n\t•\tAumento de la luminosidad y elasticidad de la piel\n\t•\tDrenaje de bolsas y ojeras\n\nZonas que puede tratar\n\n\t•\tMuslos, glúteos, abdomen, brazos, espalda\n\t•\tRostro, cuello y escote\n\t•\tPapada\n\t•\tZona periorbital y contorno labial.",
+    "ctaWhatsapp": "Hola, quiero consultar por Endermologie LPG."
+  },
+  {
+    "id": "hydrapeel",
+    "title": "Hydrapeel",
+    "summary": "Es un tratamiento estético avanzado que combina exfoliación, limpieza profunda e hidratación intensiva para mejorar la textura y luminosidad de la piel.",
+    "details": "Es un tratamiento estético avanzado que combina exfoliación, limpieza profunda e hidratación intensiva para mejorar la textura y luminosidad de la piel.\nRemueve células muertas e impurezas, mientras infunde sueros hidratantes en la piel. Es adecuado para todo tipo de pieles y ayuda a tratar condiciones como acné, arrugas y sequedad.",
+    "ctaWhatsapp": "Hola, quiero consultar por Hydrapeel."
+  },
+  {
+    "id": "ondas-de-choque",
+    "title": "Ondas de choque",
+    "summary": "Son impulsos acústicos de alta energía que penetran la piel y estimulan los tejidos profundos.",
+    "details": "Son impulsos acústicos de alta energía que penetran la piel y estimulan los tejidos profundos. Activan procesos biológicos como:\n\n\t•\tMejora de la microcirculación\n\t•\tEstimulación de fibroblastos\n\t•\tProducción de colágeno y elastina\n\t•\tDrenaje linfático\n\t•\tLipólisis mecánica (reducción de adipocitos)\n\nBeneficios estéticos\n\n\t1.\tCelulitis:\nDisminuyen los nódulos fibrosos y mejoran la textura de la piel.\n\t2.\tFlacidez cutánea:\nEstimulan colágeno y mejoran la firmeza, especialmente en muslos, abdomen, glúteos y brazos.\n\t3.\tReducción de grasa localizada:\nFavorecen la disgregación de adipocitos (sin sustituir criolipólisis).\n\t4.\tPost-liposucción o tratamientos reductores:\nAyudan a mejorar resultados y drenar.\n\nZonas comunes de aplicación\n\n\t•\tGlúteos\n\t•\tMuslos\n\t•\tAbdomen\n\t•\tBrazos\n\t•\tPantalón de montar\n\t•\tPapada\n\n\t•\tSe puede combinar con: criolipólisis, mesoterapia, radiofrecuencia, HIFU",
+    "ctaWhatsapp": "Hola, quiero consultar por Ondas de choque."
+  },
+  {
+    "id": "carboxiterapia",
+    "title": "Carboxiterapia",
+    "summary": "Consiste en la aplicación de dióxido de carbono (CO₂) medicinal por vía subcutánea o intradérmica mediante microinyecciones, con el objetivo de mejorar la circulación, oxigenar los tejidos y estimular la producción de colágeno.",
+    "details": "Consiste en la aplicación de dióxido de carbono (CO₂) medicinal por vía subcutánea o intradérmica mediante microinyecciones, con el objetivo de mejorar la circulación, oxigenar los tejidos y estimular la producción de colágeno.\n\n¿Para qué se usa en estética?\n\n\t•\tCelulitis: mejora la microcirculación y ayuda a romper los depósitos de grasa.\n\t•\tFlacidez cutánea: estimula la producción de colágeno y elastina.\n\t•\tEstrías: mejora la textura de la piel y su elasticidad.\n\t•\tOjeras: reduce la pigmentación y mejora la vascularización en la zona periocular.\n\t•\tGrasa localizada: contribuye a la lipólisis (ruptura de adipocitos).\n\t•\tRejuvenecimiento facial: mejora la tonicidad y la calidad de la piel.\n\n¿Cómo funciona?\n\nEl CO₂ inyectado:\n\n\t•\tDilata los vasos sanguíneos, mejorando la oxigenación y nutrición de los tejidos.\n\t•\tEstimula la formación de nuevos capilares.\n\t•\tProvoca una respuesta inflamatoria leve, que estimula la regeneración del tejido.\n\t•\tFavorece la lipólisis en zonas con acumulación de grasa.",
+    "ctaWhatsapp": "Hola, quiero consultar por Carboxiterapia."
+  },
+  {
+    "id": "vacuna-antiage-new-cells",
+    "title": "Vacuna antiage New Cells",
+    "summary": "Es un tratamiento de bioestimulación profunda y revitalización celular intensiva que forma parte de los protocolos más completos en medicina estética facial.",
+    "details": "Es un tratamiento de bioestimulación profunda y revitalización celular intensiva que forma parte de los protocolos más completos en medicina estética facial. Aunque no es una vacuna en el sentido médico clásico, se le llama así por su efecto preventivo y correctivo del envejecimiento, y porque se aplica en forma de microinyecciones, como si fuera una “dosis” de juventud.\n\n¿Qué es la Vacuna Antiage New Cells?\n\nEs un cóctel estéril inyectable compuesto por:\n\n\t•\tÁcido hialurónico no reticulado (hidratación y elasticidad).\n\t•\tVitaminas A, C, E y complejo B (antioxidantes y regeneradores).\n\t•\tAminoácidos y minerales (estimulan colágeno y metabolismo celular).\n\t•\tPolinucleótidos y coenzimas (reparación celular y antiinflamatorio).\n\t•\tAntioxidantes potentes como glutatión o ácido alfa-lipoico (dependiendo del lote o versión del producto).\n\nBeneficios estéticos\n\n\t•\tHidratación profunda y duradera.\n\t•\tMejora visible de la textura, tonicidad y firmeza de la piel.\n\t•\tReducción de líneas finas y prevención del envejecimiento.\n\t•\tEfecto “glow” inmediato.\n\t•\tEstimula la producción de colágeno y elastina.\n\t•\tAcción detoxificante y antioxidante.\n\nIndicaciones clínicas\n\n\t•\tFotoenvejecimiento leve a moderado.\n\t•\tPiel deshidratada, apagada o estresada.\n\t•\tPrevención del envejecimiento en pacientes jóvenes.\n\t•\tComplemento ideal post-láser, radiofrecuencia o peeling.",
+    "ctaWhatsapp": "Hola, quiero consultar por Vacuna antiage New Cells."
+  },
+  {
+    "id": "laser-nordlys",
+    "title": "Láser Nordlys",
+    "summary": "Láser indicado para tratar diversas afecciones, entre ellas:",
+    "details": "Láser indicado para tratar diversas afecciones, entre ellas:\n\n\t•\tLesiones vasculares: Rosácea, telangiectasias, puntos rubí, manchas de vino de Oporto.\n\t•\tLesiones pigmentadas: Léntigos, pecas, melasma.\n\t•\tRejuvenecimiento cutáneo: Mejora de la textura, tono y luminosidad de la piel.\n\t•\tCicatrices y estrías: Tratamiento de cicatrices de acné, quirúrgicas y estrías.\n\t•\tAcné inflamatorio: Reducción de la inflamación y mejora de la apariencia general de la piel.",
+    "ctaWhatsapp": "Hola, quiero consultar por Láser Nordlys."
+  },
+  {
+    "id": "himfu",
+    "title": "HiMFU",
+    "summary": "Este tratamiento no invasivo utiliza ondas de ultrasonido multifocal de alta intensidad para reducir la adiposidad localizada y remodelar el contorno corporal.",
+    "details": "Este tratamiento no invasivo utiliza ondas de ultrasonido multifocal de alta intensidad para reducir la adiposidad localizada y remodelar el contorno corporal.\nEstas ondas generan un efecto termomecánico que destruye las células grasas sin dañar la piel ni los tejidos circundantes. A diferencia del HIFU tradicional, HIMFU utiliza energía multifocal, lo que permite tratar áreas más extensas de manera eficiente.\n\n Indicaciones y zonas de tratamiento\n\nHIMFU está indicado para:\n\n\t•\tAdiposidad localizada con un espesor mínimo de 2,5 cm.\n\t•\tCelulitis compacta (Paniculopatía Fibro Edemato Esclerótica).\n\nLas zonas comúnmente tratadas incluyen:\n\n\t•\tAbdomen.\n\t•\tFlancos.\n\t•\tPantalón de montar.\n\t•\tPliegue subglúteo.\n\t•\tMuslos (cara anterior y posterior).\n\t•\tRodillas.\n\t•\tBrazos.\n\n️ Sesiones y resultados\n\n\t•\tDuración de la sesión: aproximadamente 25 a 40 minutos.\n\t•\tFrecuencia: una sesión cada 7 a 10 días.\n\t•\tResultados esperados: reducción de 1 a 3 cm de contorno por sesión.",
+    "ctaWhatsapp": "Hola, quiero consultar por HiMFU."
+  },
+  {
+    "id": "criofrecuencia",
+    "title": "Criofrecuencia",
+    "summary": "Es una terapia no invasiva que combina la transmisión de frío y radiofrecuencia para tratar flacidez y adiposidad generalizada.",
+    "details": "Es una terapia no invasiva que combina la transmisión de frío y radiofrecuencia para tratar flacidez y adiposidad generalizada. Esta tecnología provoca un calentamiento interno de los tejidos corporales (más de 55 °C), estimulando la síntesis de nuevas fibras de colágeno y elastina, y produciendo un efecto lifting progresivo desde la primera sesión.\n\n ¿Cómo funciona?\n\nLa criofrecuencia utiliza un sistema que combina frío y calor para generar un shock térmico en los tejidos. Este proceso activa la apoptosis de las células grasas en la hipodermis, logrando reducir el panículo adiposo. Además, el modo monopolar permite un calentamiento intensivo de las células grasas, contribuyendo a la reducción de adiposidad localizada.\n\n Indicaciones\n\nLa criofrecuencia está indicada para:\n\n\t•\tTensado de la piel\n\t•\tTratamiento de celulitis\n\t•\tModelado corporal\n\t•\tReducción de arrugas\n\t•\tAdiposidad localizada",
+    "ctaWhatsapp": "Hola, quiero consultar por Criofrecuencia."
+  },
+  {
+    "id": "lipocool",
+    "title": "LipoCool",
+    "summary": "Lipo X Cool es un tratamiento estético no invasivo que combina la acción de ondas ultrasónicas de alta potencia con la crioterapia, logrando una reducción eficaz de grasa localizada y un efecto reafirmante en la piel.",
+    "details": "Lipo X Cool es un tratamiento estético no invasivo que combina la acción de ondas ultrasónicas de alta potencia con la crioterapia, logrando una reducción eficaz de grasa localizada y un efecto reafirmante en la piel.\n\n ¿Cómo actúa?\n\n\t•\tLas ondas ultrasónicas generan microvibraciones que favorecen la ruptura de los adipocitos.\n\t•\tLa crioterapia estimula la circulación, contrae los tejidos y potencia la eliminación natural de la grasa, al mismo tiempo que mejora la firmeza cutánea.\n\n Beneficios:\n\n\t•\tReduce la grasa localizada en abdomen, flancos, muslos, brazos y glúteos.\n\t•\tMejora la firmeza y apariencia de la piel.\n\t•\tNo requiere cirugía ni recuperación.\n\t•\tSesiones rápidas, seguras y efectivas.",
+    "ctaWhatsapp": "Hola, quiero consultar por LipoCool."
+  },
+  {
+    "id": "velashape-ii",
+    "title": "Velashape II",
+    "summary": "Es un equipo médico-estético no invasivo diseñado para el tratamiento de la celulitis, la reducción de circunferencia corporal y la mejora de la textura de la piel.",
+    "details": "Es un equipo médico-estético no invasivo diseñado para el tratamiento de la celulitis, la reducción de circunferencia corporal y la mejora de la textura de la piel.\n\nFunciona combinando varias tecnologías:\n\n\t•\tRadiofrecuencia bipolar → calienta los tejidos profundos.\n\t•\tInfrarrojo → actúa en capas más superficiales de la piel.\n\t•\tVacuum y masaje mecánico → mejoran la circulación y el drenaje linfático, además de favorecer la penetración del calor.\n\nIndicaciones principales\n\n\t•\tReducción de la apariencia de celulitis.\n\t•\tDisminución de la flacidez cutánea.\n\t•\tRemodelación corporal no quirúrgica (abdomen, muslos, glúteos, brazos).\n\t•\tMejora de la textura de la piel tras embarazo o fluctuaciones de peso.\n\nSesiones y resultados\n\n\t•\tSe suelen recomendar entre 4 y 6 sesiones (dependiendo del área y el estado inicial).\n\t•\tLos resultados suelen apreciarse de forma progresiva: reducción de volumen, piel más firme y con menos irregularidades.\n\t•\tNo es un método para bajar de peso, sino para reafirmar y modelar.",
+    "ctaWhatsapp": "Hola, quiero consultar por Velashape II."
+  },
+  {
+    "id": "pdrn-de-salmon",
+    "title": "PDRN de salmón",
+    "summary": "El PDRN (Polidesoxirribonucleótido) de salmón es un principio activo innovador que se extrae del ADN del esperma del salmón (generalmente del Oncorhynchus mykiss o Salmo salar) y se utiliza por sus propiedades regenerativas, antiinflamatorias y estimulantes del metabolismo celular.",
+    "details": "El PDRN (Polidesoxirribonucleótido) de salmón es un principio activo innovador que se extrae del ADN del esperma del salmón (generalmente del Oncorhynchus mykiss o Salmo salar) y se utiliza por sus propiedades regenerativas, antiinflamatorias y estimulantes del metabolismo celular.\n\n¿Qué es el PDRN y cómo actúa?\n\nEl PDRN es una fracción del ADN con capacidad para:\n\n\t•\tEstimular la regeneración celular (especialmente fibroblastos).\n\t•\tActivar los receptores A2 del adenosín, lo que mejora la oxigenación y disminuye la inflamación.\n\t•\tAumentar la síntesis de colágeno y elastina.\n\t•\tMejorar la calidad de la piel, su textura, firmeza e hidratación.\n\nUsos estéticos del PDRN\n\nSe emplea para:\n\n\t•\tRejuvenecimiento facial y corporal.\n\t•\tMejorar la piel dañada por el sol (fotoenvejecimiento).\n\t•\tDisminuir arrugas finas.\n\t•\tTratar cicatrices de acné.\n\t•\tRecuperar piel post-láser o peeling.\n\t•\tRevitalizar ojeras y cuello.\n\nFormas de aplicación:\n\n\t•\tMesoterapia o microinyecciones intradérmicas.\n\t•\tMicroneedling (Dermapen).\n\t•\tCombinación con otros principios activos (ácido hialurónico, vitaminas, péptidos).\n\nBeneficios:\n\n\t•\tPiel más luminosa y uniforme.\n\t•\tHidratación profunda.\n\t•\tDisminución visible de signos de envejecimiento.\n\t•\tTolerancia excelente (es biocompatible y no inmunogénico).\n\t•\tResultados naturales y progresivos.",
+    "ctaWhatsapp": "Hola, quiero consultar por PDRN de salmón."
+  },
+  {
+    "id": "peptonas",
+    "title": "Peptonas",
+    "summary": "Las peptonas (también llamadas “bioreguladores peptídicos” o “péptidos de origen proteico”) son productos usados en estética para estimular la síntesis de proteínas, se indica principalmente para biorevitalización muscular y como coadyuvante en tratamientos de moldeo corporal.",
+    "details": "Las peptonas (también llamadas “bioreguladores peptídicos” o “péptidos de origen proteico”) son productos usados en estética para estimular la síntesis de proteínas, se indica principalmente para biorevitalización muscular y como coadyuvante en tratamientos de moldeo corporal.\n\n Efecto en glúteos\n\n\t•\tEstimulación muscular indirecta: promueve la reparación y síntesis de proteínas musculares, ayudando a mejorar tono y firmeza.\n\t•\tEfecto trófico: favorece la oxigenación y nutrición celular en la zona tratada.\n\t•\tAumento de volumen moderado: al mejorar la contractilidad y el metabolismo muscular, puede dar un efecto de glúteos más firmes y ligeramente más proyectados, sin ser un relleno.\n\t•\tSin efecto inmediato de relleno: a diferencia de la hidroxiapatita cálcica o el ácido hialurónico corporal, el resultado es más progresivo y natural.\n\n Sesiones\n\n\t•\tGeneralmente se aplican una vez por semana, en protocolos de 5 a 10 sesiones según el objetivo estético.\n\t•\tEl efecto se va potenciando con el tiempo y puede mantenerse con sesiones de refuerzo.\n\n Ventajas\n\n\t•\tProcedimiento mínimamente invasivo.\n\t•\tNo produce el mismo riesgo que los rellenos permanentes.\n\t•\tMejora la calidad de la piel y la tonicidad muscular.",
+    "ctaWhatsapp": "Hola, quiero consultar por Peptonas."
+  },
+  {
+    "id": "rf-bella-ii",
+    "title": "RF BELLA II",
+    "summary": "Es una multiplataforma que brinda distintos tratamientos:",
+    "details": "Es una multiplataforma que brinda distintos tratamientos:\n\n‍️ Tratamiento Facial\n\n\t•\tReafirma y tonifica la piel.\n\t•\tAtenúa arrugas y líneas de expresión.\n\t•\tMejora la flacidez en rostro, cuello y escote.\n\t•\tAporta luminosidad y textura uniforme.\n\n Tratamiento Corporal\n\n\t•\tReafirma brazos, abdomen, glúteos y piernas.\n\t•\tMejora el aspecto de la celulitis.\n\t•\tFavorece la reducción de volumen en zonas localizadas.\n\t•\tEstimula la circulación y el drenaje linfático.\n\nLOS PADS PRODUCEN LIPOLISIS Y TENSADO A LA VEZ!\n\n Beneficios\n\n\t•\tNo invasivo.\n\t•\tIndoloro y seguro.\n\t•\tSesiones rápidas y efectivas.\n\t•\tResultados progresivos y naturales.",
+    "ctaWhatsapp": "Hola, quiero consultar por RF BELLA II."
+  },
+  {
+    "id": "luminaderm",
+    "title": "LuminaDerm",
+    "summary": "Tratamiento que combina  EMS + RF + Microneedling con activos para la piel",
+    "details": "Tratamiento que combina  EMS + RF + Microneedling con activos para la piel\n\n️ Estimula colágeno y elastina en profundidad\n️ Reafirma la piel y mejora la flacidez\n️ Tonifica el músculo con efecto lifting natural\n️ Mejora textura, poros y arrugas finas\n️ Potencia la absorción de activos específicos\n️ Unifica el tono y aporta luminosidad\n️ Resultados visibles en menos sesiones\n️ Tratamiento integral, seguro y mínimamente invasivo\n\n Resultado\n\nPiel más firme, tonificada, luminosa y rejuvenecida.",
+    "ctaWhatsapp": "Hola, quiero consultar por LuminaDerm."
   }
 ]
-

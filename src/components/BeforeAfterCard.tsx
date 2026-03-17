@@ -1,4 +1,5 @@
 import { useId, useState } from 'react';
+import { resolveAssetPath } from '../lib/assetPath';
 import type { CaseStudy } from '../types/content';
 
 type BeforeAfterCardProps = {
@@ -15,12 +16,12 @@ function BeforeAfterCard({ item }: BeforeAfterCardProps) {
         <div className="result-media">
           <img
             className="result-image"
-            src={item.beforeImage}
+            src={resolveAssetPath(item.beforeImage)}
             alt={`Antes del tratamiento ${item.treatment}`}
           />
           <img
             className="result-image result-image-after"
-            src={item.afterImage}
+            src={resolveAssetPath(item.afterImage)}
             alt={`Despues del tratamiento ${item.treatment}`}
             style={{ clipPath: `inset(0 ${100 - sliderValue}% 0 0)` }}
           />

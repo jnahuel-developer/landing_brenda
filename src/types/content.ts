@@ -54,10 +54,8 @@ export type Treatment = {
   id: string;
   title: string;
   summary: string;
-  duration: string;
-  frequency: string;
-  recovery: string;
-  badge: string;
+  details: string;
+  ctaWhatsapp: string;
 };
 
 export type Product = {

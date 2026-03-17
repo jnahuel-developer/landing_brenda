@@ -188,10 +188,10 @@ section {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr);
+  grid-template-columns: 1fr;
   gap: 28px;
   align-items: stretch;
-  min-height: 78vh;
+  min-height: auto;
 }
 
 .hero-copy,
@@ -320,20 +320,18 @@ section {
 
 .hero-visual {
   position: relative;
-  min-height: 620px;
+  min-height: 340px;
   overflow: hidden;
   border-radius: var(--radius-xl);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(230, 222, 214, 0.68)),
     radial-gradient(circle at 28% 24%, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
   box-shadow: var(--shadow);
+  padding: 28px;
 }
 
 .hero-panel {
-  position: absolute;
-  right: 28px;
-  bottom: 28px;
-  left: 28px;
+  position: relative;
   padding: 34px;
 }
 
@@ -389,22 +387,24 @@ section {
   display: grid;
   width: 100%;
   max-width: none;
+  justify-self: stretch;
 }
 
 .section-title h2 {
   margin-top: 18px;
-  max-width: 15ch;
+  max-width: min(18ch, 100%);
   font-size: clamp(2.1rem, 4vw, 3.4rem);
 }
 
 .section-title p {
+  display: block;
   width: 100%;
   max-width: none;
   margin: 14px 0 0;
 }
 
 .section-about {
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  grid-template-columns: 1fr;
   align-items: start;
 }
 
@@ -508,6 +508,27 @@ section {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.treatment-card {
+  display: grid;
+  grid-template-rows: auto minmax(4.8rem, auto) 1fr auto;
+  gap: 0;
+  height: 100%;
+}
+
+.treatment-card p {
+  margin-bottom: 0;
+}
+
+.treatment-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.treatment-actions .button {
+  flex: 1;
+}
+
 .space-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -582,25 +603,6 @@ section {
   margin: 0;
   color: var(--text-soft);
   line-height: 1.55;
-}
-
-.treatment-card dl {
-  display: grid;
-  gap: 12px;
-  margin: 20px 0 24px;
-  padding: 18px 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.treatment-card dt {
-  color: var(--text-soft);
-  font-size: 0.92rem;
-}
-
-.treatment-card dd {
-  margin: 4px 0 0;
-  font-weight: 600;
 }
 
 .inline-link {
@@ -1068,6 +1070,19 @@ section {
   font-size: 2.6rem;
 }
 
+.treatment-modal-summary {
+  margin: 16px 0 0;
+  color: var(--metal-dark);
+  font-weight: 600;
+}
+
+.treatment-modal-copy {
+  margin: 18px 0 0;
+  color: var(--text-soft);
+  line-height: 1.65;
+  white-space: pre-line;
+}
+
 .modal-close {
   margin-left: auto;
   padding: 8px 12px;
@@ -1168,7 +1183,7 @@ section {
   }
 
   .hero-visual {
-    min-height: 460px;
+    min-height: 300px;
   }
 
   .contact-meta,
@@ -1200,6 +1215,7 @@ section {
   }
 
   .product-actions,
+  .treatment-actions,
   .chat-actions,
   .modal-actions {
     flex-direction: column;
