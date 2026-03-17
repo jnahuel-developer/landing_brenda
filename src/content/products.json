@@ -1,0 +1,57 @@
+[
+  {
+    "id": "serum-antioxidante",
+    "name": "Serum antioxidante diario",
+    "category": "Dermocosmetica",
+    "descriptionShort": "Textura ligera con enfoque en luminosidad y cuidado antioxidante.",
+    "descriptionLong": "Ideal para rutinas diurnas que buscan reforzar la barrera cutanea y aportar uniformidad al aspecto de la piel.",
+    "image": "/assets/placeholders/product-serum.svg",
+    "ctaWhatsapp": "Hola, quiero consultar por el Serum antioxidante diario."
+  },
+  {
+    "id": "crema-reparadora",
+    "name": "Crema reparadora post tratamiento",
+    "category": "Post procedimiento",
+    "descriptionShort": "Formula orientada a confort, reparacion cosmetica y humectacion.",
+    "descriptionLong": "Se utiliza como complemento en protocolos que requieren cuidado domiciliario y sensacion de alivio.",
+    "image": "/assets/placeholders/product-cream.svg",
+    "ctaWhatsapp": "Hola, quiero consultar por la Crema reparadora post tratamiento."
+  },
+  {
+    "id": "protector-mineral",
+    "name": "Protector solar mineral FPS 50",
+    "category": "Proteccion",
+    "descriptionShort": "Cobertura liviana con enfoque en fotoproteccion urbana diaria.",
+    "descriptionLong": "Acompana rutinas de mantenimiento y post procedimiento segun indicacion profesional.",
+    "image": "/assets/placeholders/product-spf.svg",
+    "ctaWhatsapp": "Hola, quiero consultar por el Protector solar mineral FPS 50."
+  },
+  {
+    "id": "bruma-calmante",
+    "name": "Bruma calmante revitalizante",
+    "category": "Dermocosmetica",
+    "descriptionShort": "Refresca la piel y suma confort durante el dia.",
+    "descriptionLong": "Pensada para pieles sensibles o sensibilizadas por el clima, la oficina o la rutina urbana.",
+    "image": "/assets/placeholders/product-mist.svg",
+    "ctaWhatsapp": "Hola, quiero consultar por la Bruma calmante revitalizante."
+  },
+  {
+    "id": "mascara-noche",
+    "name": "Mascara de nutricion nocturna",
+    "category": "Hidratacion",
+    "descriptionShort": "Apoyo cosmetico intensivo para rutinas nocturnas de recuperacion.",
+    "descriptionLong": "Aporta sensacion de nutricion y suavidad al despertar dentro de planes domiciliarios personalizados.",
+    "image": "/assets/placeholders/product-mask.svg",
+    "ctaWhatsapp": "Hola, quiero consultar por la Mascara de nutricion nocturna."
+  },
+  {
+    "id": "gel-limpiador",
+    "name": "Gel limpiador suave",
+    "category": "Rutina diaria",
+    "descriptionShort": "Limpieza gentil para uso cotidiano sin sensacion tirante.",
+    "descriptionLong": "Punto de partida ideal para esquemas de cuidado facial indicados por la profesional.",
+    "image": "/assets/placeholders/product-cleanser.svg",
+    "ctaWhatsapp": "Hola, quiero consultar por el Gel limpiador suave."
+  }
+]
+

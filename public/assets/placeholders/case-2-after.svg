@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Despues del tratamiento 2</title>
+  <desc id="desc">Placeholder de despues para la seccion de resultados.</desc>
+  <rect width="640" height="640" rx="40" fill="#ede5dc"/>
+  <ellipse cx="320" cy="340" rx="166" ry="220" fill="#c6a38e"/>
+  <circle cx="260" cy="304" r="14" fill="#7b655a"/>
+  <circle cx="380" cy="304" r="14" fill="#7b655a"/>
+  <path d="M266 424c36 16 72 16 108 0" stroke="#85675b" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <circle cx="420" cy="184" r="28" fill="#ffffff" fill-opacity="0.18"/>
+</svg>
+

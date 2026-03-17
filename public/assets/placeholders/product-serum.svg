@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" role="img" aria-labelledby="title desc">
+  <title id="title">Serum antioxidante diario</title>
+  <desc id="desc">Placeholder de producto para el catalogo del consultorio.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f6f0e7"/>
+      <stop offset="100%" stop-color="#d8d6d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="760" rx="48" fill="url(#bg)"/>
+  <rect x="212" y="116" width="216" height="480" rx="66" fill="#fdfaf6" stroke="#8a8783" stroke-width="4"/>
+  <rect x="244" y="92" width="152" height="84" rx="26" fill="#b8b4ae"/>
+  <rect x="258" y="264" width="124" height="18" rx="9" fill="#d6cfc5"/>
+  <rect x="258" y="304" width="124" height="18" rx="9" fill="#d6cfc5"/>
+  <text x="320" y="660" fill="#5f5b56" font-size="32" font-family="Georgia, serif" text-anchor="middle">Serum diario</text>
+</svg>
+

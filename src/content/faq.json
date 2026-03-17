@@ -1,0 +1,45 @@
+[
+  {
+    "id": "faq-01",
+    "category": "Tratamientos",
+    "question": "Como se define que tratamiento es adecuado para mi caso?",
+    "answer": "La indicacion siempre se define luego de una consulta profesional. Se consideran antecedentes, tipo de piel, objetivos, expectativas y tiempos de recuperacion posibles antes de proponer un plan.",
+    "redirectToWhatsapp": true
+  },
+  {
+    "id": "faq-02",
+    "category": "Sesiones",
+    "question": "Cuanto dura una sesion y cuantas necesito?",
+    "answer": "Depende del procedimiento y del objetivo. En general, cada ficha del sitio muestra un rango orientativo, pero la cantidad de sesiones y la frecuencia se personalizan en consulta.",
+    "redirectToWhatsapp": false
+  },
+  {
+    "id": "faq-03",
+    "category": "Cuidados",
+    "question": "Hay tiempo de recuperacion luego de un tratamiento?",
+    "answer": "Algunos protocolos requieren cuidados minimos y otros pueden implicar pautas concretas durante varios dias. Antes de cualquier procedimiento se explican de manera detallada los cuidados y tiempos esperables.",
+    "redirectToWhatsapp": false
+  },
+  {
+    "id": "faq-04",
+    "category": "Productos",
+    "question": "Los productos del catalogo sirven para cualquier tipo de piel?",
+    "answer": "No siempre. Aunque hay opciones de uso frecuente, la recomendacion ideal depende de la sensibilidad, rutina previa, objetivos y tratamientos realizados recientemente.",
+    "redirectToWhatsapp": true
+  },
+  {
+    "id": "faq-05",
+    "category": "Seguridad",
+    "question": "El asistente puede decirme si un tratamiento es apto para mi?",
+    "answer": "No. Este espacio solo brinda orientacion general y no reemplaza la evaluacion profesional. La decision final siempre debe tomarse con la medica tratante.",
+    "redirectToWhatsapp": true
+  },
+  {
+    "id": "faq-06",
+    "category": "Agenda",
+    "question": "Puedo reservar turno desde este chat?",
+    "answer": "No gestiona turnos ni realiza evaluaciones. Si queres avanzar, el siguiente paso es escribir por WhatsApp para coordinar con el equipo del consultorio.",
+    "redirectToWhatsapp": true
+  }
+]
+

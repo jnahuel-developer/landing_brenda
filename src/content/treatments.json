@@ -1,0 +1,39 @@
+[
+  {
+    "id": "armonizacion",
+    "title": "Armonizacion facial sutil",
+    "summary": "Evaluamos proporciones, expresion y calidad de piel para definir un plan progresivo y natural.",
+    "duration": "45 a 60 min",
+    "frequency": "Segun evaluacion medica",
+    "recovery": "Variable segun procedimiento",
+    "badge": "Consulta guiada"
+  },
+  {
+    "id": "skinboosters",
+    "title": "Skinboosters e hidratacion profunda",
+    "summary": "Protocolos orientados a luminosidad, elasticidad y calidad general de la piel.",
+    "duration": "30 a 45 min",
+    "frequency": "Ciclos de varias sesiones",
+    "recovery": "Minima a moderada",
+    "badge": "Glow saludable"
+  },
+  {
+    "id": "peelings",
+    "title": "Peelings medicalizados",
+    "summary": "Planes para textura, manchas y renovacion cutanea con acompanamiento posterior.",
+    "duration": "30 min",
+    "frequency": "Planificado por temporada y biotipo",
+    "recovery": "Controlada y explicada en consulta",
+    "badge": "Renovacion"
+  },
+  {
+    "id": "corporal",
+    "title": "Protocolos corporales complementarios",
+    "summary": "Abordajes no invasivos para mejorar tonicidad, contorno y bienestar integral.",
+    "duration": "40 a 60 min",
+    "frequency": "Semanal o quincenal",
+    "recovery": "Sin reposo habitual",
+    "badge": "Bienestar integral"
+  }
+]
+

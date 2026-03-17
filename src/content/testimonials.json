@@ -1,0 +1,24 @@
+[
+  {
+    "id": "testimonial-01",
+    "name": "Paciente frecuente",
+    "treatment": "Rutina combinada",
+    "quote": "El consultorio transmite calma desde que entras. Cada recomendacion tuvo sentido y seguimiento.",
+    "rating": 5
+  },
+  {
+    "id": "testimonial-02",
+    "name": "Paciente nueva",
+    "treatment": "Primera consulta",
+    "quote": "Me fui con un plan claro, tiempos concretos y muchisima tranquilidad.",
+    "rating": 5
+  },
+  {
+    "id": "testimonial-03",
+    "name": "Paciente control anual",
+    "treatment": "Mantenimiento facial",
+    "quote": "La comunicacion es impecable y los resultados se sienten coherentes con lo que se conversa.",
+    "rating": 5
+  }
+]
+

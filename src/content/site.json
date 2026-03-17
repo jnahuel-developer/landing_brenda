@@ -1,0 +1,64 @@
+{
+  "brand": {
+    "name": "Dra. Elena Varela",
+    "specialty": "Medicina estetica integral",
+    "registration": "MN 123456",
+    "city": "Buenos Aires",
+    "tagline": "Una experiencia estetica cuidada, calida y respaldada por criterio profesional."
+  },
+  "hero": {
+    "eyebrow": "Consultorio de estetica refinado",
+    "title": "Bienestar, armonia y resultados que respetan tu identidad.",
+    "description": "Disenamos tratamientos faciales y corporales con mirada medica, seguimiento cercano y una experiencia boutique en un entorno sereno de blancos calidos y brillos metalizados.",
+    "primaryCtaLabel": "Reservar consulta por WhatsApp",
+    "secondaryCtaLabel": "Ver tratamientos"
+  },
+  "about": {
+    "title": "Un espacio pensado para que te sientas acompanada desde la primera consulta.",
+    "description": "Cada protocolo se define luego de una evaluacion personalizada, con objetivos realistas, tiempos claros y acompanamiento profesional antes, durante y despues del tratamiento.",
+    "pillars": [
+      {
+        "title": "Diagnostico personalizado",
+        "description": "Indicaciones segun tu piel, antecedentes y objetivos concretos."
+      },
+      {
+        "title": "Tecnicas cuidadas",
+        "description": "Protocolos delicados, criterios medicos y recuperacion planificada."
+      },
+      {
+        "title": "Seguimiento cercano",
+        "description": "Indicaciones de control y canales directos para resolver dudas."
+      }
+    ]
+  },
+  "stats": [
+    {
+      "label": "Evaluacion inicial",
+      "value": "100% personalizada"
+    },
+    {
+      "label": "Tiempo de respuesta",
+      "value": "Dentro de 24 hs habiles"
+    },
+    {
+      "label": "Enfoque",
+      "value": "Natural y progresivo"
+    }
+  ],
+  "contact": {
+    "whatsappNumber": "5491100000000",
+    "whatsappMessage": "Hola, quiero consultar por los tratamientos del consultorio.",
+    "instagramUrl": "https://www.instagram.com/consultorio.estetica",
+    "email": "hola@consultorioestetica.com",
+    "formAction": "https://formspree.io/f/your-form-id",
+    "formSuccessMessage": "Gracias por tu mensaje. Te responderemos por mail a la brevedad.",
+    "address": "Recoleta, Buenos Aires",
+    "hours": "Lunes a viernes de 10 a 19 hs",
+    "notice": "El formulario queda listo para funcionar apenas reemplaces la URL de Formspree por la definitiva."
+  },
+  "seo": {
+    "title": "Dra. Elena Varela | Medicina estetica integral",
+    "description": "Consultorio de medicina estetica integral con tratamientos personalizados, productos seleccionados, resultados y contacto directo."
+  }
+}
+

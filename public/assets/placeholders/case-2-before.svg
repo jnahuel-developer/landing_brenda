@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Antes del tratamiento 2</title>
+  <desc id="desc">Placeholder de antes para la seccion de resultados.</desc>
+  <rect width="640" height="640" rx="40" fill="#cfd1d5"/>
+  <ellipse cx="320" cy="340" rx="166" ry="220" fill="#b99a83"/>
+  <circle cx="260" cy="304" r="14" fill="#7b655a"/>
+  <circle cx="380" cy="304" r="14" fill="#7b655a"/>
+  <path d="M266 424c36 16 72 16 108 0" stroke="#7c665b" stroke-width="16" fill="none" stroke-linecap="round"/>
+</svg>
+
