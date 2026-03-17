@@ -1,4 +1,4 @@
-import { useDeferredValue, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import BeforeAfterCard from './components/BeforeAfterCard';
 import ContactForm from './components/ContactForm';
 import GuidedChat from './components/GuidedChat';
@@ -30,6 +30,19 @@ const caseStudies = casesData as CaseStudy[];
 const faqItems = faqData as FaqItem[];
 const spaces = spacesData as SpaceHighlight[];
 const testimonials = testimonialsData as Testimonial[];
+const productsPerPage = 8;
+
+function chunkItems<T>(items: T[], size: number) {
+  const chunks: T[][] = [];
+
+  for (let index = 0; index < items.length; index += size) {
+    chunks.push(items.slice(index, index + size));
+  }
+
+  return chunks;
+}
+
+const productPages = chunkItems(products, productsPerPage);
 
 function buildWhatsappLink(number: string, message: string) {
   const cleanNumber = number.replace(/\D/g, '');
@@ -37,32 +50,16 @@ function buildWhatsappLink(number: string, message: string) {
 }
 
 function App() {
-  const [selectedCategory, setSelectedCategory] = useState('Todas');
-  const [productSearch, setProductSearch] = useState('');
+  const [activeProductPage, setActiveProductPage] = useState(0);
   const [selectedTreatmentId, setSelectedTreatmentId] = useState<string | null>(null);
   const [selectedProductId, setSelectedProductId] = useState<string | null>(null);
-  const deferredSearch = useDeferredValue(productSearch);
-
-  const categories = ['Todas', ...new Set(products.map((item) => item.category))];
   const selectedTreatment = treatments.find((item) => item.id === selectedTreatmentId) ?? null;
   const selectedProduct = products.find((item) => item.id === selectedProductId) ?? null;
+  const visibleProducts = productPages[activeProductPage] ?? productPages[0] ?? [];
   const whatsappUrl = buildWhatsappLink(
     site.contact.whatsappNumber,
     site.contact.whatsappMessage,
   );
-
-  const filteredProducts = products.filter((product) => {
-    const matchesCategory =
-      selectedCategory === 'Todas' || product.category === selectedCategory;
-    const query = deferredSearch.trim().toLowerCase();
-    const matchesSearch =
-      query.length === 0 ||
-      product.name.toLowerCase().includes(query) ||
-      product.descriptionShort.toLowerCase().includes(query) ||
-      product.category.toLowerCase().includes(query);
-
-    return matchesCategory && matchesSearch;
-  });
 
   useEffect(() => {
     document.title = site.seo.title;
@@ -95,6 +92,18 @@ function App() {
       window.removeEventListener('keydown', handleEscape);
     };
   }, [selectedProduct, selectedTreatment]);
+
+  useEffect(() => {
+    if (productPages.length <= 1 || selectedProduct) {
+      return undefined;
+    }
+
+    const rotation = window.setInterval(() => {
+      setActiveProductPage((currentPage) => (currentPage + 1) % productPages.length);
+    }, 5000);
+
+    return () => window.clearInterval(rotation);
+  }, [selectedProduct]);
 
   return (
     <>
@@ -220,12 +229,25 @@ function App() {
             <div className="space-grid">
               {spaces.map((space) => (
                 <article key={space.id} className="space-card">
-                  {space.image ? (
-                    <img
-                      className="space-image"
-                      src={resolveAssetPath(space.image)}
-                      alt={space.title}
-                    />
+                  {space.media ? (
+                    space.media.toLowerCase().endsWith('.mp4') ? (
+                      <video
+                        className="space-video"
+                        src={resolveAssetPath(space.media)}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                        aria-label={space.title}
+                      />
+                    ) : (
+                      <img
+                        className="space-image"
+                        src={resolveAssetPath(space.media)}
+                        alt={space.title}
+                      />
+                    )
                   ) : (
                     <div className="space-visual" aria-hidden="true">
                       <span>{space.eyebrow}</span>
@@ -283,66 +305,58 @@ function App() {
               description="Esta estructura queda lista para reciclar el catalogo de WhatsApp Business usando imagenes y contenido propio del consultorio."
             />
 
-            <div className="catalog-toolbar">
-              <div className="pill-group" aria-label="Filtros de categorias">
-                {categories.map((category) => (
-                  <button
-                    key={category}
-                    type="button"
-                    className={category === selectedCategory ? 'pill is-active' : 'pill'}
-                    onClick={() => setSelectedCategory(category)}
-                  >
-                    {category}
-                  </button>
+            <div className="product-carousel">
+              <div className="product-grid">
+                {visibleProducts.map((product) => (
+                  <article key={product.id} className="product-card">
+                    <button
+                      type="button"
+                      className="product-image-button"
+                      onClick={() => setSelectedProductId(product.id)}
+                      aria-label={`Ver detalle de ${product.name}`}
+                    >
+                      <img src={resolveAssetPath(product.image)} alt={product.name} />
+                    </button>
+                    <div className="product-copy">
+                      <span className="chip muted">{product.category}</span>
+                      <h3>{product.name}</h3>
+                      <p>{product.descriptionShort}</p>
+                    </div>
+                    <div className="product-actions">
+                      <button
+                        type="button"
+                        className="button button-secondary"
+                        onClick={() => setSelectedProductId(product.id)}
+                      >
+                        Ver detalle
+                      </button>
+                      <a
+                        className="button button-primary"
+                        href={buildWhatsappLink(site.contact.whatsappNumber, product.ctaWhatsapp)}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        WhatsApp
+                      </a>
+                    </div>
+                  </article>
                 ))}
               </div>
 
-              <label className="search-input">
-                <span>Buscar</span>
-                <input
-                  type="search"
-                  value={productSearch}
-                  onChange={(event) => setProductSearch(event.target.value)}
-                  placeholder="Rutina diaria, protector, hidratacion..."
-                />
-              </label>
-            </div>
-
-            <div className="product-grid">
-              {filteredProducts.map((product) => (
-                <article key={product.id} className="product-card">
-                  <button
-                    type="button"
-                    className="product-image-button"
-                    onClick={() => setSelectedProductId(product.id)}
-                    aria-label={`Ver detalle de ${product.name}`}
-                  >
-                    <img src={resolveAssetPath(product.image)} alt={product.name} />
-                  </button>
-                  <div className="product-copy">
-                    <span className="chip muted">{product.category}</span>
-                    <h3>{product.name}</h3>
-                    <p>{product.descriptionShort}</p>
-                  </div>
-                  <div className="product-actions">
+              {productPages.length > 1 ? (
+                <div className="product-pagination" aria-label="Paginas del catalogo">
+                  {productPages.map((_, index) => (
                     <button
+                      key={`catalog-page-${index + 1}`}
                       type="button"
-                      className="button button-secondary"
-                      onClick={() => setSelectedProductId(product.id)}
-                    >
-                      Ver detalle
-                    </button>
-                    <a
-                      className="button button-primary"
-                      href={buildWhatsappLink(site.contact.whatsappNumber, product.ctaWhatsapp)}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      WhatsApp
-                    </a>
-                  </div>
-                </article>
-              ))}
+                      className={index === activeProductPage ? 'product-dot is-active' : 'product-dot'}
+                      onClick={() => setActiveProductPage(index)}
+                      aria-label={`Ver pagina ${index + 1} del catalogo`}
+                      aria-pressed={index === activeProductPage}
+                    />
+                  ))}
+                </div>
+              ) : null}
             </div>
           </RevealSection>
 
@@ -350,7 +364,7 @@ function App() {
             <SectionTitle
               eyebrow="Resultados y testimonios"
               title="Historias visuales y experiencias compartidas con naturalidad."
-              description="La estructura queda lista para recibir tus fotos reales de antes y despues y testimonios validados. En esta version se muestran placeholders de demostracion."
+              description="Una primera seleccion de casos reales para recorrer con comparador interactivo antes y despues, siempre con foco en cambios sutiles y acompanamiento profesional."
             />
 
             <div className="results-grid">

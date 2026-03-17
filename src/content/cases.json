@@ -1,32 +1,62 @@
 [
   {
-    "id": "case-01",
-    "treatment": "Peeling medicalizado y rutina domiciliaria",
-    "beforeImage": "/assets/placeholders/case-1-before.svg",
-    "afterImage": "/assets/placeholders/case-1-after.svg",
-    "resultText": "Mejora visual de textura y luminosidad luego de un protocolo planificado.",
-    "testimonialName": "Paciente, 34 anos",
-    "testimonialRole": "Renovacion cutanea",
-    "testimonialText": "Me senti muy cuidada durante todo el proceso. Entendi que esperar y como sostener el resultado en casa."
+    "id": "nariz-a",
+    "treatment": "Retoque de nariz con acido hialuronico",
+    "beforeImage": "/assets/Antes y después/Nariz - A - Antes.jpg",
+    "afterImage": "/assets/Antes y después/Nariz - A - Después.jpg",
+    "resultText": "Ajuste sutil del perfil nasal para ganar armonia sin perder rasgos masculinos.",
+    "testimonialName": "Paciente, 43 anos",
+    "testimonialRole": "Rinomodelacion masculina",
+    "testimonialText": "Queria un cambio prolijo y natural. El resultado acompano mi cara sin verse forzado."
   },
   {
-    "id": "case-02",
-    "treatment": "Hidratacion profunda y skinboosters",
-    "beforeImage": "/assets/placeholders/case-2-before.svg",
-    "afterImage": "/assets/placeholders/case-2-after.svg",
-    "resultText": "Aspecto mas fresco y elastico con seguimiento posterior y controles programados.",
+    "id": "nariz-b",
+    "treatment": "Retoque de nariz con acido hialuronico",
+    "beforeImage": "/assets/Antes y después/Nariz - B - Antes.jpg",
+    "afterImage": "/assets/Antes y después/Nariz - B - Después.jpg",
+    "resultText": "Correccion delicada del dorso y mejor lectura del perfil con una impronta fresca y joven.",
+    "testimonialName": "Paciente, 22 anos",
+    "testimonialRole": "Rinomodelacion femenina",
+    "testimonialText": "Me encanto que el cambio se note elegante. Se ve mas armonico, pero sigo siendo yo."
+  },
+  {
+    "id": "nariz-c",
+    "treatment": "Retoque de nariz con acido hialuronico",
+    "beforeImage": "/assets/Antes y después/Nariz - C - Antes.jpg",
+    "afterImage": "/assets/Antes y después/Nariz - C - Después.jpg",
+    "resultText": "Perfil mas equilibrado y definicion frontal cuidada para conservar naturalidad masculina.",
     "testimonialName": "Paciente, 41 anos",
-    "testimonialRole": "Calidad de piel",
-    "testimonialText": "Buscaba algo natural y eso fue exactamente lo que conseguimos. Todo estuvo muy bien explicado."
+    "testimonialRole": "Rinomodelacion masculina",
+    "testimonialText": "Buscaba algo medido, sin exageraciones. La mejora fue clara y muy acorde a mi cara."
   },
   {
-    "id": "case-03",
-    "treatment": "Protocolo integral de mantenimiento facial",
-    "beforeImage": "/assets/placeholders/case-3-before.svg",
-    "afterImage": "/assets/placeholders/case-3-after.svg",
-    "resultText": "Plan gradual con foco en armonia, descanso visual y continuidad en el cuidado.",
-    "testimonialName": "Paciente, 38 anos",
-    "testimonialRole": "Mantenimiento personalizado",
-    "testimonialText": "Valore mucho que no se prometieran resultados exagerados. El plan fue realista y elegante."
+    "id": "nordlyss-a",
+    "treatment": "Laser Nordlys",
+    "beforeImage": "/assets/Antes y después/Nordlyss - A - Antes.jpg",
+    "afterImage": "/assets/Antes y después/Nordlyss - A - Después.jpg",
+    "resultText": "Piel con tono mas uniforme, mayor luminosidad y lectura general mas descansada.",
+    "testimonialName": "Paciente, 52 anos",
+    "testimonialRole": "Rejuvenecimiento con Nordlys",
+    "testimonialText": "La piel se ve mas pareja y luminosa. Me gusto mucho el cambio porque sigue viendose natural."
+  },
+  {
+    "id": "nordlyss-b",
+    "treatment": "Laser Nordlys",
+    "beforeImage": "/assets/Antes y después/Nordlyss - B - Antes.jpg",
+    "afterImage": "/assets/Antes y después/Nordlyss - B - Después.jpg",
+    "resultText": "Mejora visual de textura y luminosidad con un resultado gradual y elegante.",
+    "testimonialName": "Paciente, 58 anos",
+    "testimonialRole": "Rejuvenecimiento con Nordlys",
+    "testimonialText": "Se noto en la calidad de la piel y en el brillo. Fue un cambio suave, pero muy favorecedor."
+  },
+  {
+    "id": "nordlyss-c",
+    "treatment": "Laser Nordlys",
+    "beforeImage": "/assets/Antes y después/Nordlyss - C - Antes.jpg",
+    "afterImage": "/assets/Antes y después/Nordlyss - C - Después.jpg",
+    "resultText": "Aspecto mas uniforme y revitalizado, con foco en sostener una expresion natural.",
+    "testimonialName": "Paciente, 63 anos",
+    "testimonialRole": "Rejuvenecimiento con Nordlys",
+    "testimonialText": "Senti la piel mas viva y mas linda sin dejar de verme como siempre. Eso era exactamente lo que queria."
   }
 ]

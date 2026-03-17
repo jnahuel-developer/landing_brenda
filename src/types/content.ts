@@ -66,6 +66,7 @@ export type Product = {
   descriptionLong: string;
   image: string;
   ctaWhatsapp: string;
+  hasRealImage: boolean;
 };
 
 export type CaseStudy = {
@@ -100,5 +101,5 @@ export type SpaceHighlight = {
   eyebrow: string;
   title: string;
   description: string;
-  image: string;
+  media: string;
 };
