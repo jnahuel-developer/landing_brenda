@@ -56,6 +56,8 @@ export type Treatment = {
   summary: string;
   details: string;
   ctaWhatsapp: string;
+  image?: string;
+  hasRealImage?: boolean;
 };
 
 export type Product = {

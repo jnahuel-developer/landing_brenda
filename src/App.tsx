@@ -24,13 +24,30 @@ import type {
 } from './types/content';
 
 const site = siteData as SiteContent;
-const treatments = treatmentsData as Treatment[];
 const products = productsData as Product[];
 const caseStudies = casesData as CaseStudy[];
 const faqItems = faqData as FaqItem[];
 const spaces = spacesData as SpaceHighlight[];
 const testimonials = testimonialsData as Testimonial[];
-const productsPerPage = 8;
+const treatmentImageMap: Record<string, string> = {
+  'toxina-botulinica': '/assets/Productos/Botox.jpeg',
+  'criolipolisis-plana': '/assets/Productos/Criolipólisis plana.jpeg',
+  ellanse: '/assets/Productos/Ellanse.jpeg',
+  exosomas: '/assets/Productos/Exosomas.jpeg',
+  hydrapeel: '/assets/Productos/Hydrapeel.jpeg',
+  luminaderm: '/assets/Productos/Lumina.jpeg',
+  'nctf-135-ha': '/assets/Productos/NCTF 135 HA.jpeg',
+  'laser-nordlys': '/assets/Productos/Nordlys.jpeg',
+  'ondas-de-choque': '/assets/Productos/Ondas de choque.jpeg',
+  'sunekos-1200': '/assets/Productos/Sunekos 1200.jpeg',
+  'velashape-ii': '/assets/Productos/Velashape.jpeg',
+};
+const treatments = (treatmentsData as Treatment[]).map((item) => ({
+  ...item,
+  image: treatmentImageMap[item.id] ?? '',
+  hasRealImage: Boolean(treatmentImageMap[item.id]),
+}));
+const treatmentsPerPage = 8;
 
 function chunkItems<T>(items: T[], size: number) {
   const chunks: T[][] = [];
@@ -42,7 +59,7 @@ function chunkItems<T>(items: T[], size: number) {
   return chunks;
 }
 
-const productPages = chunkItems(products, productsPerPage);
+const treatmentPages = chunkItems(treatments, treatmentsPerPage);
 
 function buildWhatsappLink(number: string, message: string) {
   const cleanNumber = number.replace(/\D/g, '');
@@ -50,12 +67,13 @@ function buildWhatsappLink(number: string, message: string) {
 }
 
 function App() {
-  const [activeProductPage, setActiveProductPage] = useState(0);
+  const [activeTreatmentPage, setActiveTreatmentPage] = useState(0);
+  const [treatmentRotationDelay, setTreatmentRotationDelay] = useState(10000);
   const [selectedTreatmentId, setSelectedTreatmentId] = useState<string | null>(null);
   const [selectedProductId, setSelectedProductId] = useState<string | null>(null);
   const selectedTreatment = treatments.find((item) => item.id === selectedTreatmentId) ?? null;
   const selectedProduct = products.find((item) => item.id === selectedProductId) ?? null;
-  const visibleProducts = productPages[activeProductPage] ?? productPages[0] ?? [];
+  const visibleTreatments = treatmentPages[activeTreatmentPage] ?? treatmentPages[0] ?? [];
   const whatsappUrl = buildWhatsappLink(
     site.contact.whatsappNumber,
     site.contact.whatsappMessage,
@@ -94,16 +112,22 @@ function App() {
   }, [selectedProduct, selectedTreatment]);
 
   useEffect(() => {
-    if (productPages.length <= 1 || selectedProduct) {
+    if (treatmentPages.length <= 1 || selectedTreatment) {
       return undefined;
     }
 
-    const rotation = window.setInterval(() => {
-      setActiveProductPage((currentPage) => (currentPage + 1) % productPages.length);
-    }, 5000);
+    const rotation = window.setTimeout(() => {
+      setActiveTreatmentPage((currentPage) => (currentPage + 1) % treatmentPages.length);
+      setTreatmentRotationDelay(10000);
+    }, treatmentRotationDelay);
 
-    return () => window.clearInterval(rotation);
-  }, [selectedProduct]);
+    return () => window.clearTimeout(rotation);
+  }, [activeTreatmentPage, selectedTreatment, treatmentRotationDelay]);
+
+  const handleTreatmentPageChange = (pageIndex: number) => {
+    setActiveTreatmentPage(pageIndex);
+    setTreatmentRotationDelay(20000);
+  };
 
   return (
     <>
@@ -270,31 +294,57 @@ function App() {
               description="La landing deja visibles lineamientos generales. La indicacion final siempre se confirma en consulta, segun objetivos, tiempos y antecedentes."
             />
 
-            <div className="treatment-grid">
-              {treatments.map((treatment) => (
-                <article key={treatment.id} className="treatment-card">
-                  <span className="chip muted">Tratamiento disponible</span>
-                  <h3>{treatment.title}</h3>
-                  <p>{treatment.summary}</p>
-                  <div className="treatment-actions">
+            <div className="treatment-carousel">
+              <div className="treatment-grid">
+                {visibleTreatments.map((treatment) => (
+                  <article key={treatment.id} className="treatment-card">
+                    {treatment.image ? (
+                      <div className="treatment-preview">
+                        <img src={resolveAssetPath(treatment.image)} alt={treatment.title} />
+                      </div>
+                    ) : (
+                      <div className="treatment-preview treatment-preview-fallback" aria-hidden="true">
+                        <span>Tratamiento</span>
+                      </div>
+                    )}
+                    <span className="chip muted">Tratamiento disponible</span>
+                    <h3>{treatment.title}</h3>
+                    <p className="treatment-summary">{treatment.summary}</p>
+                    <div className="treatment-actions">
+                      <button
+                        type="button"
+                        className="button button-secondary"
+                        onClick={() => setSelectedTreatmentId(treatment.id)}
+                      >
+                        Ver detalle
+                      </button>
+                      <a
+                        className="button button-primary"
+                        href={buildWhatsappLink(site.contact.whatsappNumber, treatment.ctaWhatsapp)}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Consultar
+                      </a>
+                    </div>
+                  </article>
+                ))}
+              </div>
+
+              {treatmentPages.length > 1 ? (
+                <div className="carousel-pagination" aria-label="Paginas de tratamientos">
+                  {treatmentPages.map((_, index) => (
                     <button
+                      key={`treatment-page-${index + 1}`}
                       type="button"
-                      className="button button-secondary"
-                      onClick={() => setSelectedTreatmentId(treatment.id)}
-                    >
-                      Ver detalle
-                    </button>
-                    <a
-                      className="button button-primary"
-                      href={buildWhatsappLink(site.contact.whatsappNumber, treatment.ctaWhatsapp)}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Consultar
-                    </a>
-                  </div>
-                </article>
-              ))}
+                      className={index === activeTreatmentPage ? 'carousel-dot is-active' : 'carousel-dot'}
+                      onClick={() => handleTreatmentPageChange(index)}
+                      aria-label={`Ver pagina ${index + 1} de tratamientos`}
+                      aria-pressed={index === activeTreatmentPage}
+                    />
+                  ))}
+                </div>
+              ) : null}
             </div>
           </RevealSection>
 
@@ -305,58 +355,41 @@ function App() {
               description="Esta estructura queda lista para reciclar el catalogo de WhatsApp Business usando imagenes y contenido propio del consultorio."
             />
 
-            <div className="product-carousel">
-              <div className="product-grid">
-                {visibleProducts.map((product) => (
-                  <article key={product.id} className="product-card">
+            <div className="product-grid">
+              {products.map((product) => (
+                <article key={product.id} className="product-card">
+                  <button
+                    type="button"
+                    className="product-image-button"
+                    onClick={() => setSelectedProductId(product.id)}
+                    aria-label={`Ver detalle de ${product.name}`}
+                  >
+                    <img src={resolveAssetPath(product.image)} alt={product.name} />
+                  </button>
+                  <div className="product-copy">
+                    <span className="chip muted">{product.category}</span>
+                    <h3>{product.name}</h3>
+                    <p>{product.descriptionShort}</p>
+                  </div>
+                  <div className="product-actions">
                     <button
                       type="button"
-                      className="product-image-button"
+                      className="button button-secondary"
                       onClick={() => setSelectedProductId(product.id)}
-                      aria-label={`Ver detalle de ${product.name}`}
                     >
-                      <img src={resolveAssetPath(product.image)} alt={product.name} />
+                      Ver detalle
                     </button>
-                    <div className="product-copy">
-                      <span className="chip muted">{product.category}</span>
-                      <h3>{product.name}</h3>
-                      <p>{product.descriptionShort}</p>
-                    </div>
-                    <div className="product-actions">
-                      <button
-                        type="button"
-                        className="button button-secondary"
-                        onClick={() => setSelectedProductId(product.id)}
-                      >
-                        Ver detalle
-                      </button>
-                      <a
-                        className="button button-primary"
-                        href={buildWhatsappLink(site.contact.whatsappNumber, product.ctaWhatsapp)}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        WhatsApp
-                      </a>
-                    </div>
-                  </article>
-                ))}
-              </div>
-
-              {productPages.length > 1 ? (
-                <div className="product-pagination" aria-label="Paginas del catalogo">
-                  {productPages.map((_, index) => (
-                    <button
-                      key={`catalog-page-${index + 1}`}
-                      type="button"
-                      className={index === activeProductPage ? 'product-dot is-active' : 'product-dot'}
-                      onClick={() => setActiveProductPage(index)}
-                      aria-label={`Ver pagina ${index + 1} del catalogo`}
-                      aria-pressed={index === activeProductPage}
-                    />
-                  ))}
-                </div>
-              ) : null}
+                    <a
+                      className="button button-primary"
+                      href={buildWhatsappLink(site.contact.whatsappNumber, product.ctaWhatsapp)}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      WhatsApp
+                    </a>
+                  </div>
+                </article>
+              ))}
             </div>
           </RevealSection>
 
@@ -494,26 +527,35 @@ function App() {
             >
               Cerrar
             </button>
-            <span className="chip muted">Tratamiento disponible</span>
-            <h3 id="treatment-modal-title">{selectedTreatment.title}</h3>
-            <p className="treatment-modal-summary">{selectedTreatment.summary}</p>
-            <p className="treatment-modal-copy">{selectedTreatment.details}</p>
-            <div className="modal-actions">
-              <a
-                className="button button-primary"
-                href={buildWhatsappLink(site.contact.whatsappNumber, selectedTreatment.ctaWhatsapp)}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Consultar este tratamiento
-              </a>
-              <button
-                type="button"
-                className="button button-secondary"
-                onClick={() => setSelectedTreatmentId(null)}
-              >
-                Seguir recorriendo
-              </button>
+            <div className="treatment-modal-body">
+              {selectedTreatment.image ? (
+                <img
+                  className="treatment-modal-image"
+                  src={resolveAssetPath(selectedTreatment.image)}
+                  alt={selectedTreatment.title}
+                />
+              ) : null}
+              <span className="chip muted">Tratamiento disponible</span>
+              <h3 id="treatment-modal-title">{selectedTreatment.title}</h3>
+              <p className="treatment-modal-summary">{selectedTreatment.summary}</p>
+              <p className="treatment-modal-copy">{selectedTreatment.details}</p>
+              <div className="modal-actions">
+                <a
+                  className="button button-primary"
+                  href={buildWhatsappLink(site.contact.whatsappNumber, selectedTreatment.ctaWhatsapp)}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Consultar este tratamiento
+                </a>
+                <button
+                  type="button"
+                  className="button button-secondary"
+                  onClick={() => setSelectedTreatmentId(null)}
+                >
+                  Seguir recorriendo
+                </button>
+              </div>
             </div>
           </aside>
         </div>
