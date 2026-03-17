@@ -76,6 +76,17 @@ section {
   scroll-margin-top: 108px;
 }
 
+.reveal-section {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity 520ms ease, transform 520ms ease;
+}
+
+.reveal-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .page-shell {
   position: relative;
   width: min(calc(100% - 32px), var(--max-width));
@@ -120,21 +131,14 @@ section {
   font-size: 0.92rem;
 }
 
-.brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 52px;
+.brand-logo {
+  width: 60px;
+  height: 60px;
+  padding: 4px;
+  object-fit: cover;
   border-radius: 18px;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.45rem;
-  font-weight: 700;
-  color: var(--metal-dark);
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(219, 213, 207, 0.72)),
-    linear-gradient(135deg, rgba(162, 153, 142, 0.18), rgba(255, 255, 255, 0));
-  border: 1px solid rgba(126, 119, 112, 0.18);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 16px 28px rgba(85, 71, 56, 0.12);
 }
 
 .nav-links {
@@ -382,12 +386,21 @@ section {
 }
 
 .section-title {
-  max-width: 700px;
+  display: grid;
+  width: 100%;
+  max-width: none;
 }
 
 .section-title h2 {
   margin-top: 18px;
+  max-width: 15ch;
   font-size: clamp(2.1rem, 4vw, 3.4rem);
+}
+
+.section-title p {
+  width: 100%;
+  max-width: none;
+  margin: 14px 0 0;
 }
 
 .section-about {
@@ -399,11 +412,59 @@ section {
   padding: 34px;
 }
 
+.about-intro {
+  display: grid;
+  grid-template-columns: minmax(160px, 190px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.portrait-card {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+
+.portrait-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  box-shadow: var(--shadow);
+}
+
+.portrait-card figcaption {
+  display: grid;
+  gap: 4px;
+}
+
+.portrait-card strong {
+  font-size: 1.1rem;
+}
+
+.portrait-card span {
+  color: var(--text-soft);
+}
+
+.about-copy {
+  display: grid;
+  align-content: start;
+}
+
+.about-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
 .pillar-grid,
 .treatment-grid,
 .product-grid,
 .results-grid,
 .testimonial-strip,
+.space-grid,
 .contact-cards {
   display: grid;
   gap: 18px;
@@ -445,6 +506,82 @@ section {
 
 .treatment-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.space-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.space-card {
+  display: grid;
+  gap: 18px;
+  height: 100%;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.space-visual,
+.space-image {
+  width: 100%;
+  aspect-ratio: 1.15 / 1;
+  border-radius: 24px;
+}
+
+.space-image {
+  object-fit: cover;
+}
+
+.space-visual {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0)),
+    linear-gradient(135deg, rgba(214, 207, 199, 0.95), rgba(244, 238, 232, 0.85));
+}
+
+.space-visual::before,
+.space-visual::after {
+  position: absolute;
+  border-radius: 999px;
+  content: '';
+}
+
+.space-visual::before {
+  inset: 22px 24px auto auto;
+  width: 112px;
+  height: 112px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0));
+}
+
+.space-visual::after {
+  inset: auto auto 24px 24px;
+  width: 160px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(92, 87, 81, 0.65), rgba(92, 87, 81, 0));
+}
+
+.space-visual span {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  color: var(--metal-dark);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.1rem;
+}
+
+.space-copy h3 {
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+}
+
+.space-copy p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.55;
 }
 
 .treatment-card dl {
@@ -587,11 +724,14 @@ section {
 }
 
 .result-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.62);
   border-radius: 28px;
   background: linear-gradient(180deg, rgba(255, 249, 242, 0.86), rgba(242, 236, 228, 0.7));
   box-shadow: var(--shadow);
+  height: 100%;
 }
 
 .result-media {
@@ -636,13 +776,23 @@ section {
 }
 
 .result-copy {
-  padding: 0 24px 24px;
+  display: grid;
+  grid-template-rows: minmax(3.2em, auto) minmax(4.8em, auto) 1fr;
+  gap: 16px;
+  height: 100%;
+  padding: 18px 24px 24px;
+}
+
+.result-copy h3,
+.result-copy p,
+.result-copy blockquote {
+  margin: 0;
 }
 
 .result-copy blockquote {
-  margin: 20px 0 0;
   padding-top: 18px;
   border-top: 1px solid var(--line);
+  align-self: end;
 }
 
 .result-copy footer {
@@ -662,12 +812,29 @@ section {
 
 .chat-layout {
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  align-items: start;
+  align-items: stretch;
 }
 
 .chat-panel,
 .chat-shell {
+  display: grid;
   padding: 28px;
+}
+
+.section-chat {
+  --chat-panel-height: 620px;
+}
+
+.chat-panel {
+  grid-template-rows: auto auto minmax(0, 1fr);
+  min-height: var(--chat-panel-height);
+  max-height: var(--chat-panel-height);
+}
+
+.chat-shell {
+  grid-template-rows: minmax(0, 1fr) auto;
+  min-height: var(--chat-panel-height);
+  max-height: var(--chat-panel-height);
 }
 
 .chat-header h3 {
@@ -679,6 +846,9 @@ section {
   display: grid;
   gap: 12px;
   margin-top: 18px;
+  min-height: 0;
+  overflow: auto;
+  padding-right: 6px;
 }
 
 .question-card {
@@ -702,7 +872,9 @@ section {
 .chat-messages {
   display: grid;
   gap: 12px;
-  min-height: 360px;
+  min-height: 0;
+  overflow: auto;
+  padding-right: 6px;
 }
 
 .chat-message {
@@ -736,17 +908,42 @@ section {
 }
 
 .contact-section {
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
   align-items: start;
 }
 
 .contact-cards {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 26px;
 }
 
 .contact-card {
   display: block;
+  height: 100%;
+}
+
+.contact-card-social {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.contact-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  color: var(--metal-dark);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(225, 217, 210, 0.84));
+  box-shadow: 0 12px 24px rgba(85, 71, 56, 0.1);
+}
+
+.contact-card-icon svg {
+  width: 26px;
+  height: 26px;
 }
 
 .contact-meta {
@@ -906,8 +1103,21 @@ section {
   }
 
   .product-grid,
-  .pillar-grid {
+  .pillar-grid,
+  .space-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .chat-panel,
+  .chat-shell {
+    min-height: auto;
+    max-height: none;
+  }
+
+  .chat-questions,
+  .chat-messages {
+    overflow: visible;
+    padding-right: 0;
   }
 }
 
@@ -937,6 +1147,10 @@ section {
     padding: 24px;
   }
 
+  .about-intro {
+    grid-template-columns: 1fr;
+  }
+
   .hero-stats,
   .catalog-toolbar,
   .contact-grid {
@@ -945,6 +1159,7 @@ section {
 
   .product-grid,
   .pillar-grid,
+  .space-grid,
   .treatment-grid,
   .results-grid,
   .testimonial-strip,
@@ -1001,6 +1216,11 @@ section {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .reveal-section {
+    opacity: 1;
+    transform: none;
   }
 
   *,

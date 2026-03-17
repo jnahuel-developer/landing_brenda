@@ -1,4 +1,4 @@
-import { startTransition, useState } from 'react';
+import { startTransition, useEffect, useRef, useState } from 'react';
 import type { FaqItem } from '../types/content';
 
 type GuidedChatProps = {
@@ -21,12 +21,26 @@ function GuidedChat({ items, whatsappUrl }: GuidedChatProps) {
     { id: 'intro', role: 'assistant', text: INTRO_MESSAGE, tone: 'warning' },
   ]);
   const [activeCategory, setActiveCategory] = useState('Todas');
+  const messagesRef = useRef<HTMLDivElement | null>(null);
 
   const categories = ['Todas', ...new Set(items.map((item) => item.category))];
   const visibleQuestions =
     activeCategory === 'Todas'
       ? items
       : items.filter((item) => item.category === activeCategory);
+
+  useEffect(() => {
+    const container = messagesRef.current;
+
+    if (!container) {
+      return;
+    }
+
+    container.scrollTo({
+      top: container.scrollHeight,
+      behavior: 'smooth',
+    });
+  }, [messages]);
 
   const handleQuestionClick = (item: FaqItem) => {
     startTransition(() => {
@@ -88,7 +102,7 @@ function GuidedChat({ items, whatsappUrl }: GuidedChatProps) {
       </div>
 
       <div className="chat-shell" aria-live="polite">
-        <div className="chat-messages">
+        <div className="chat-messages" ref={messagesRef}>
           {messages.map((message) => (
             <div
               key={message.id}

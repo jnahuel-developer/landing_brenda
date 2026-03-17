@@ -41,7 +41,6 @@ function BeforeAfterCard({ item }: BeforeAfterCardProps) {
         </label>
       </div>
       <div className="result-copy">
-        <span className="chip muted">Consentimiento confirmado</span>
         <h3>{item.treatment}</h3>
         <p>{item.resultText}</p>
         <blockquote>
@@ -56,4 +55,3 @@ function BeforeAfterCard({ item }: BeforeAfterCardProps) {
 }
 
 export default BeforeAfterCard;
-

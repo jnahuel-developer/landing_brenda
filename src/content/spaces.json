@@ -1,0 +1,23 @@
+[
+  {
+    "id": "space-01",
+    "eyebrow": "Cabina",
+    "title": "Un ambiente sereno para consultas y procedimientos cuidados.",
+    "description": "Blancos calidos, metalizados suaves y una atmosfera silenciosa para que cada encuentro se sienta confortable desde el primer minuto.",
+    "image": ""
+  },
+  {
+    "id": "space-02",
+    "eyebrow": "Equipamiento",
+    "title": "Tecnologia seleccionada para acompanar protocolos medidos.",
+    "description": "La seccion queda preparada para mostrar equipos instalados, procesos de trabajo y detalles funcionales del consultorio cuando compartas las fotos reales.",
+    "image": ""
+  },
+  {
+    "id": "space-03",
+    "eyebrow": "Experiencia",
+    "title": "Pequenos extras que completan una experiencia mas amable.",
+    "description": "Tambien se puede usar este bloque para destacar sala de espera, amenities, organizacion del espacio y la identidad visual del consultorio.",
+    "image": ""
+  }
+]

@@ -7,8 +7,7 @@
     "resultText": "Mejora visual de textura y luminosidad luego de un protocolo planificado.",
     "testimonialName": "Paciente, 34 anos",
     "testimonialRole": "Renovacion cutanea",
-    "testimonialText": "Me senti muy cuidada durante todo el proceso. Entendi que esperar y como sostener el resultado en casa.",
-    "consentConfirmed": true
+    "testimonialText": "Me senti muy cuidada durante todo el proceso. Entendi que esperar y como sostener el resultado en casa."
   },
   {
     "id": "case-02",
@@ -18,8 +17,7 @@
     "resultText": "Aspecto mas fresco y elastico con seguimiento posterior y controles programados.",
     "testimonialName": "Paciente, 41 anos",
     "testimonialRole": "Calidad de piel",
-    "testimonialText": "Buscaba algo natural y eso fue exactamente lo que conseguimos. Todo estuvo muy bien explicado.",
-    "consentConfirmed": true
+    "testimonialText": "Buscaba algo natural y eso fue exactamente lo que conseguimos. Todo estuvo muy bien explicado."
   },
   {
     "id": "case-03",
@@ -29,8 +27,6 @@
     "resultText": "Plan gradual con foco en armonia, descanso visual y continuidad en el cuidado.",
     "testimonialName": "Paciente, 38 anos",
     "testimonialRole": "Mantenimiento personalizado",
-    "testimonialText": "Valore mucho que no se prometieran resultados exagerados. El plan fue realista y elegante.",
-    "consentConfirmed": true
+    "testimonialText": "Valore mucho que no se prometieran resultados exagerados. El plan fue realista y elegante."
   }
 ]
-

@@ -2,11 +2,14 @@ import { useDeferredValue, useEffect, useState } from 'react';
 import BeforeAfterCard from './components/BeforeAfterCard';
 import ContactForm from './components/ContactForm';
 import GuidedChat from './components/GuidedChat';
+import RevealSection from './components/RevealSection';
 import SectionTitle from './components/SectionTitle';
+import SocialIcon from './components/SocialIcon';
 import casesData from './content/cases.json';
 import faqData from './content/faq.json';
 import productsData from './content/products.json';
 import siteData from './content/site.json';
+import spacesData from './content/spaces.json';
 import testimonialsData from './content/testimonials.json';
 import treatmentsData from './content/treatments.json';
 import type {
@@ -14,6 +17,7 @@ import type {
   FaqItem,
   Product,
   SiteContent,
+  SpaceHighlight,
   Testimonial,
   Treatment,
 } from './types/content';
@@ -23,6 +27,7 @@ const treatments = treatmentsData as Treatment[];
 const products = productsData as Product[];
 const caseStudies = casesData as CaseStudy[];
 const faqItems = faqData as FaqItem[];
+const spaces = spacesData as SpaceHighlight[];
 const testimonials = testimonialsData as Testimonial[];
 
 function buildWhatsappLink(number: string, message: string) {
@@ -92,7 +97,11 @@ function App() {
       <div className="page-shell">
         <header className="topbar">
           <div className="brand-lockup">
-            <span className="brand-mark">EV</span>
+            <img
+              className="brand-logo"
+              src={site.brand.logoImage}
+              alt={`Logo de ${site.brand.name}`}
+            />
             <div>
               <p>{site.brand.name}</p>
               <span>
@@ -102,6 +111,7 @@ function App() {
           </div>
 
           <nav className="nav-links" aria-label="Navegacion principal">
+            <a href="#consultorio">Consultorio</a>
             <a href="#tratamientos">Tratamientos</a>
             <a href="#productos">Productos</a>
             <a href="#resultados">Resultados</a>
@@ -114,7 +124,7 @@ function App() {
         </header>
 
         <main>
-          <section className="hero" id="inicio">
+          <RevealSection className="hero" id="inicio">
             <div className="hero-copy">
               <span className="section-eyebrow">{site.hero.eyebrow}</span>
               <h1>{site.hero.title}</h1>
@@ -155,15 +165,31 @@ function App() {
                 </div>
               </div>
             </div>
-          </section>
+          </RevealSection>
 
-          <section className="section-grid section-about">
+          <RevealSection className="section-grid section-about">
             <div className="about-panel">
-              <SectionTitle
-                eyebrow="Enfoque profesional"
-                title={site.about.title}
-                description={site.about.description}
-              />
+              <div className="about-intro">
+                <figure className="portrait-card">
+                  <img src={site.brand.profileImage} alt={site.brand.profileAlt} />
+                  <figcaption>
+                    <strong>{site.brand.name}</strong>
+                    <span>{site.brand.specialty}</span>
+                  </figcaption>
+                </figure>
+
+                <div className="about-copy">
+                  <SectionTitle
+                    eyebrow="Enfoque profesional"
+                    title={site.about.title}
+                    description={site.about.description}
+                  />
+                  <div className="about-meta">
+                    <span className="chip muted">{site.brand.registration}</span>
+                    <span className="chip muted">{site.contact.address}</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="pillar-grid">
@@ -175,9 +201,36 @@ function App() {
                 </article>
               ))}
             </div>
-          </section>
+          </RevealSection>
 
-          <section className="section-grid" id="tratamientos">
+          <RevealSection className="section-grid" id="consultorio">
+            <SectionTitle
+              eyebrow={site.spaces.eyebrow}
+              title={site.spaces.title}
+              description={site.spaces.description}
+            />
+
+            <div className="space-grid">
+              {spaces.map((space) => (
+                <article key={space.id} className="space-card">
+                  {space.image ? (
+                    <img className="space-image" src={space.image} alt={space.title} />
+                  ) : (
+                    <div className="space-visual" aria-hidden="true">
+                      <span>{space.eyebrow}</span>
+                    </div>
+                  )}
+                  <div className="space-copy">
+                    <span className="chip muted">{space.eyebrow}</span>
+                    <h3>{space.title}</h3>
+                    <p>{space.description}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </RevealSection>
+
+          <RevealSection className="section-grid" id="tratamientos">
             <SectionTitle
               eyebrow="Tratamientos"
               title="Protocolos disenados para resultados elegantes, realistas y sostenibles."
@@ -210,9 +263,9 @@ function App() {
                 </article>
               ))}
             </div>
-          </section>
+          </RevealSection>
 
-          <section className="section-grid" id="productos">
+          <RevealSection className="section-grid" id="productos">
             <SectionTitle
               eyebrow="Catalogo"
               title="Productos seleccionados para acompanar la experiencia del consultorio."
@@ -280,21 +333,19 @@ function App() {
                 </article>
               ))}
             </div>
-          </section>
+          </RevealSection>
 
-          <section className="section-grid" id="resultados">
+          <RevealSection className="section-grid" id="resultados">
             <SectionTitle
               eyebrow="Resultados y testimonios"
-              title="Historias visuales y experiencias compartidas con consentimiento."
+              title="Historias visuales y experiencias compartidas con naturalidad."
               description="La estructura queda lista para recibir tus fotos reales de antes y despues y testimonios validados. En esta version se muestran placeholders de demostracion."
             />
 
             <div className="results-grid">
-              {caseStudies
-                .filter((item) => item.consentConfirmed)
-                .map((item) => (
-                  <BeforeAfterCard key={item.id} item={item} />
-                ))}
+              {caseStudies.map((item) => (
+                <BeforeAfterCard key={item.id} item={item} />
+              ))}
             </div>
 
             <div className="testimonial-strip">
@@ -306,9 +357,9 @@ function App() {
                 </article>
               ))}
             </div>
-          </section>
+          </RevealSection>
 
-          <section className="section-grid section-chat">
+          <RevealSection className="section-grid section-chat">
             <SectionTitle
               eyebrow="FAQ guiado"
               title="Un asistente simple para orientar, no para diagnosticar."
@@ -316,9 +367,9 @@ function App() {
             />
 
             <GuidedChat items={faqItems} whatsappUrl={whatsappUrl} />
-          </section>
+          </RevealSection>
 
-          <section className="section-grid contact-section" id="contacto">
+          <RevealSection className="section-grid contact-section" id="contacto">
             <div className="contact-copy">
               <SectionTitle
                 eyebrow="Contacto"
@@ -327,25 +378,30 @@ function App() {
               />
 
               <div className="contact-cards">
-                <a className="contact-card" href={whatsappUrl} target="_blank" rel="noreferrer">
-                  <span className="chip">WhatsApp</span>
-                  <strong>Consulta directa</strong>
-                  <p>Abre chat en WhatsApp Web o app con mensaje precargado.</p>
+                <a className="contact-card contact-card-social" href={whatsappUrl} target="_blank" rel="noreferrer">
+                  <span className="contact-card-icon">
+                    <SocialIcon kind="whatsapp" />
+                  </span>
+                  <div>
+                    <span className="chip">WhatsApp</span>
+                    <strong>Consulta directa</strong>
+                    <p>Abre chat en WhatsApp Web o app con mensaje precargado.</p>
+                  </div>
                 </a>
                 <a
-                  className="contact-card"
+                  className="contact-card contact-card-social"
                   href={site.contact.instagramUrl}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span className="chip">Instagram</span>
-                  <strong>Perfil del consultorio</strong>
-                  <p>Ideal para explorar novedades, resultados y tono visual de la marca.</p>
-                </a>
-                <a className="contact-card" href={`mailto:${site.contact.email}`}>
-                  <span className="chip">Email</span>
-                  <strong>{site.contact.email}</strong>
-                  <p>Tambien podes escribir por correo si preferis una consulta mas detallada.</p>
+                  <span className="contact-card-icon">
+                    <SocialIcon kind="instagram" />
+                  </span>
+                  <div>
+                    <span className="chip">Instagram</span>
+                    <strong>Perfil del consultorio</strong>
+                    <p>Ideal para explorar novedades, resultados y tono visual de la marca.</p>
+                  </div>
                 </a>
               </div>
 
@@ -370,7 +426,7 @@ function App() {
               </p>
               <ContactForm contact={site.contact} />
             </div>
-          </section>
+          </RevealSection>
         </main>
 
         <footer className="site-footer">
@@ -384,7 +440,6 @@ function App() {
             <a href={site.contact.instagramUrl} target="_blank" rel="noreferrer">
               Instagram
             </a>
-            <a href={`mailto:${site.contact.email}`}>Email</a>
           </div>
         </footer>
       </div>

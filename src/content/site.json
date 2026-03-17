@@ -1,21 +1,24 @@
 {
   "brand": {
-    "name": "Dra. Elena Varela",
-    "specialty": "Medicina estetica integral",
-    "registration": "MN 123456",
-    "city": "Buenos Aires",
-    "tagline": "Una experiencia estetica cuidada, calida y respaldada por criterio profesional."
+    "name": "Dra. Brenda Mansilla",
+    "specialty": "Medicina estetica",
+    "registration": "MN 206082",
+    "city": "Don Torcuato",
+    "tagline": "Medicina estetica con mirada natural, sensibilidad visual y acompanamiento cercano.",
+    "logoImage": "/assets/branding/logo.jfif",
+    "profileImage": "/assets/branding/perfil.jpg",
+    "profileAlt": "Retrato de la Dra. Brenda Mansilla"
   },
   "hero": {
     "eyebrow": "Consultorio de estetica refinado",
     "title": "Bienestar, armonia y resultados que respetan tu identidad.",
-    "description": "Disenamos tratamientos faciales y corporales con mirada medica, seguimiento cercano y una experiencia boutique en un entorno sereno de blancos calidos y brillos metalizados.",
+    "description": "Creamos experiencias de medicina estetica con criterio profesional, detalles cuidados y una atmosfera serena inspirada en blancos calidos y grises metalizados.",
     "primaryCtaLabel": "Reservar consulta por WhatsApp",
     "secondaryCtaLabel": "Ver tratamientos"
   },
   "about": {
-    "title": "Un espacio pensado para que te sientas acompanada desde la primera consulta.",
-    "description": "Cada protocolo se define luego de una evaluacion personalizada, con objetivos realistas, tiempos claros y acompanamiento profesional antes, durante y despues del tratamiento.",
+    "title": "Una atencion personal, serena y enfocada en resultados elegantes.",
+    "description": "Cada protocolo se define a partir de una evaluacion profesional real, con objetivos claros, tiempos explicados y acompanamiento cercano en cada etapa.",
     "pillars": [
       {
         "title": "Diagnostico personalizado",
@@ -30,6 +33,11 @@
         "description": "Indicaciones de control y canales directos para resolver dudas."
       }
     ]
+  },
+  "spaces": {
+    "eyebrow": "El consultorio",
+    "title": "Un entorno pensado para transmitir calma, confianza y criterio estetico.",
+    "description": "La seccion queda lista para sumar fotos reales del consultorio, el equipamiento y los detalles de experiencia que quieras destacar."
   },
   "stats": [
     {
@@ -46,19 +54,18 @@
     }
   ],
   "contact": {
-    "whatsappNumber": "5491100000000",
+    "whatsappNumber": "5491160310146",
     "whatsappMessage": "Hola, quiero consultar por los tratamientos del consultorio.",
-    "instagramUrl": "https://www.instagram.com/consultorio.estetica",
-    "email": "hola@consultorioestetica.com",
+    "instagramUrl": "https://www.instagram.com/drabrendamansilla",
+    "email": "",
     "formAction": "https://formspree.io/f/your-form-id",
     "formSuccessMessage": "Gracias por tu mensaje. Te responderemos por mail a la brevedad.",
-    "address": "Recoleta, Buenos Aires",
-    "hours": "Lunes a viernes de 10 a 19 hs",
+    "address": "Av. Lucio Melendez 1489, Don Torcuato",
+    "hours": "Lunes a Viernes de 8:00 a 16:00",
     "notice": "El formulario queda listo para funcionar apenas reemplaces la URL de Formspree por la definitiva."
   },
   "seo": {
-    "title": "Dra. Elena Varela | Medicina estetica integral",
-    "description": "Consultorio de medicina estetica integral con tratamientos personalizados, productos seleccionados, resultados y contacto directo."
+    "title": "Dra. Brenda Mansilla | Medicina estetica",
+    "description": "Consultorio de medicina estetica de Brenda Mansilla con tratamientos personalizados, productos seleccionados, resultados y contacto directo."
   }
 }
-

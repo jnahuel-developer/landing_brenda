@@ -5,6 +5,9 @@ export type SiteContent = {
     registration: string;
     city: string;
     tagline: string;
+    logoImage: string;
+    profileImage: string;
+    profileAlt: string;
   };
   hero: {
     eyebrow: string;
@@ -20,6 +23,11 @@ export type SiteContent = {
       title: string;
       description: string;
     }>;
+  };
+  spaces: {
+    eyebrow: string;
+    title: string;
+    description: string;
   };
   stats: Array<{
     label: string;
@@ -71,7 +79,6 @@ export type CaseStudy = {
   testimonialName: string;
   testimonialRole: string;
   testimonialText: string;
-  consentConfirmed: boolean;
 };
 
 export type Testimonial = {
@@ -90,3 +97,10 @@ export type FaqItem = {
   redirectToWhatsapp: boolean;
 };
 
+export type SpaceHighlight = {
+  id: string;
+  eyebrow: string;
+  title: string;
+  description: string;
+  image: string;
+};
